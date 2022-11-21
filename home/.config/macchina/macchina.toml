@@ -1,0 +1,13 @@
+long_uptime = true
+long_shell = false
+long_kernel = false
+current_shell = true
+physical_cores = true 
+
+theme = "metruzanca"
+
+show = [
+  "Uptime",
+  "Packages",
+  "Shell",
+]
