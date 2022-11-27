@@ -5,6 +5,5 @@ abbr arc "$EDITOR $c/Users/Metru/AppData/Roaming/alacritty/alacritty.yml"
 abbr rc "$EDITOR ~/dev/dotfiles"
 
 if test $isWSL
-  abbr espanso "$EDITOR $c/Users/Metru/AppData/Roaming/espanso/match/base.yml"
   abbr winget "winget.exe"
 end
