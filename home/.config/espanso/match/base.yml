@@ -1,0 +1,14 @@
+# https://espanso.org/docs/
+matches:
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  - trigger: ":c15"
+    replace: "https://cal.com/samzanca/15min"
+  - trigger: ":c30"
+    replace: "https://cal.com/samzanca/30min"
