@@ -55,8 +55,8 @@ done
 [ "$(ls -A $BACKUP)" ] || rm -r "$BACKUP"
 
 
-# TODO improve this
-# If WSL
-if [[ "$(grep microsoft /proc/version)" ]]; then
-  cp "$TOPATH/.config/espanso/match/base.yml" "/mnt/c/Users/Metru/AppData/Roaming/espanso/match/base.yml"
-fi
+# # TODO improve this
+# # If WSL
+# if [[ "$(grep microsoft /proc/version)" ]]; then
+#   cp "$TOPATH/.config/espanso/match/base.yml" "/mnt/c/Users/Metru/AppData/Roaming/espanso/match/base.yml"
+# fi
