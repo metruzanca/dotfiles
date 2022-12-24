@@ -57,3 +57,6 @@ git config --global user.email "sam@zanca.dev";
 
 ## TODO
 - [ ] Add github-cli
+- [ ] Clean up the "Installation" section, ideally refactoring it to an idempotent & distro agnostic script.
+  - [ ] Either find a tool for the distro-agnostic part or try using [Nix](https://github.com/NixOS/nix) or [Comtrya](https://www.comtrya.dev/)
+
