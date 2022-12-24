@@ -25,16 +25,35 @@ Unfortunately I don't know who originally wrote this linking script, if I find t
 - [macchina](https://github.com/Macchina-CLI/macchina/): rust minimalist `neofetch` replacement
 - [lsd](https://github.com/Peltoche/lsd): rust `ls` replacement with nerdfont support
 
-### Installation
+### Fonts
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads):  (I specifically use FiraCode)
 
-#### Rust apps
+
+## Installation
+
+```bash
+curl https://get.volta.sh | bash
 ```
+
+### Rust apps
+```bash
 cargo install macchina lsd
 ```
 
-#### Fish
-```
-sudo apt install fish;
+### Fish
+```bash
+sudo apt install fish; # ubuntu
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish;
-omf install bass
+omf install bass;
 ```
+
+### Ubuntu Apps
+```bash
+# Configure git identity
+git config --global user.name "Sam Zanca";
+git config --global user.email "sam@zanca.dev";
+```
+
+
+## TODO
+- [ ] Add github-cli
