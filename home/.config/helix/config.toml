@@ -1,0 +1,6 @@
+theme = "onedarker"
+[editor]
+true-color = true
+
+[editor.file-picker]
+hidden = false
