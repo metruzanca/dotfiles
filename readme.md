@@ -34,3 +34,6 @@ The `unix.sh` is the platform agnostic script that does the bulk of the heavy li
 - [Volta](https://volta.sh/): Like nvm but leagues better. #rust
 - [Helix](https://helix-editor.com/): (I also use vscode, but the config isn't here yet) #rust
 - [Alacritty](https://alacritty.org/): #rust
+
+## Themes
+- [Dracula](https://draculatheme.com/): recently been one of my gotos for everything.
