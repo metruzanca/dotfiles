@@ -16,6 +16,13 @@ Unfortunately I don't know who originally wrote the linking script, if I find th
 
 ---
 
+## Installers
+Whenever I need a new system configured, I'll use one of these bash scripts to get up and running.
+
+For now both my linux machine and my windows machine use debian so I've only got a `debian.sh` entry script. Once I've got a mac once more, I'll probably add a `macOs.sh` with nuances.
+
+The `unix.sh` is the platform agnostic script that does the bulk of the heavy lifting and heavily relies on brew. Without brew, I'd need to make a separate script for mac, linux and the various distros. e.g. `brew install..`, `sudo apt install..`, `pacman -Sy..` all become `brew install..`. Brew also handles most of the path variables e.g. cargo which normally gets initted via `. "$HOME/.cargo/env"` or adding `$HOME/.cargo/bin` to path, is automatically handled by brew and doesn't need to be added to a bash/zsh/fish config file.
+
 ## Apps
 - [HomeBrew](): Linux/MacOS agonstic package manager. The back bone of this config.
 - [Fish Shell](https://fishshell.com/)
