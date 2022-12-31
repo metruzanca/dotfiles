@@ -2,12 +2,19 @@ long_uptime = true
 long_shell = false
 long_kernel = false
 current_shell = true
-physical_cores = true 
+physical_cores = true
 
 theme = "metruzanca"
 
+# Host, Machine, Kernel, Distribution, OperatingSystem, DesktopEnvironment, WindowManager, Packages, Shell, Terminal, LocalIP, Backlight, Resolution, Uptime, Processor, ProcessorLoad, Memory, Battery
+
+interface = "eth0"
+
 show = [
+  "LocalIP",
+  "Host",
+  "Distribution",
   "Uptime",
-  "Packages",
-  "Shell",
+  "Memory",
+  "ProcessorLoad",
 ]
