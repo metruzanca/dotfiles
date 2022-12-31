@@ -1,1 +1,2 @@
+# Only needed if building from source, instead of `brew install helix`
 home/.config/helix/runtime
