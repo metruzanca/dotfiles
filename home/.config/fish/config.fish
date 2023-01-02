@@ -26,6 +26,7 @@ if type -q lsd
     abbr ls lsd;
 end
 
+alias trim="awk '{\$1=\$1;print}'";
 
 # ---------- Initializations ----------
 

@@ -20,9 +20,9 @@
 mkdir -p "$BACKUP"
 
 if [ -z "$TOPATH" ]; then
-  cd "$(dirname $0)/home/"
+  cd "$(dirname $0)/home/" || return
 else
-  cd "$TOPATH"
+  cd "$TOPATH" || return
 fi
 : ${TOPATH:="$PWD"}
 
@@ -30,7 +30,7 @@ printf ">>> Updating dotfile symlinks (linking from path: $TOPATH)\n\n"
 
 for FILE in $(find . -type f -o -type l | sed 's|./||'); do
   mkdir -p "$FROMPATH/$(dirname $FILE)"
-  if [ -d "$FROMPATH/$FILE" -a ! -L "$FROMPATH/$FILE" ]; then # Directory.
+  if [ -d "$FROMPATH/$FILE" ] && [ ! -L "$FROMPATH/$FILE" ]; then # Directory.
     printf "${RED}DIRSKIP: $FROMPATH/$FILE is a directory!${NC}\n" # This shouldn't happen.
   continue
   elif [ -L "$FROMPATH/$FILE" ]; then # Symlink.
@@ -52,7 +52,7 @@ for FILE in $(find . -type f -o -type l | sed 's|./||'); do
 done
 
 # Clean up backup folder if empty
-[ "$(ls -A $BACKUP)" ] || rm -r "$BACKUP"
+[ "$(ls -A "$BACKUP")" ] || rm -r "$BACKUP"
 
 
 # # TODO improve this
