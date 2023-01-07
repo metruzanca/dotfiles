@@ -37,3 +37,7 @@ The `unix.sh` is the platform agnostic script that does the bulk of the heavy li
 
 ## Themes
 - [Dracula](https://draculatheme.com/): recently been one of my gotos for everything.
+
+
+## Fonts
+- [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/latest)
