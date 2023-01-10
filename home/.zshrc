@@ -6,3 +6,7 @@ autoload -Uz compinit && compinit
 # autoload -Uz promptinit && promptinit
 
 eval "$(starship init zsh)"
+
+if [ -x "$(command -v direnv)" ]; then 
+  eval "$(direnv hook zsh)"
+fi
