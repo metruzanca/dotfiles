@@ -17,7 +17,7 @@ matches:
           # 2022-12-04T21:45:31.049Z
           format: "%Y-%m-%dT%H:%M:%S%.3fZ"
 
-  - trigger: ":c15"
+  - trigger: ":cal"
     replace: "https://cal.com/samzanca/15min"
-  - trigger: ":c30"
+  - trigger: ":cal"
     replace: "https://cal.com/samzanca/30min"

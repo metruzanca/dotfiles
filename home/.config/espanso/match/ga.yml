@@ -1,0 +1,4 @@
+# https://espanso.org/docs/
+matches:
+  - trigger: ":ga"
+    replace: "sam.zanca@generalassemb.ly"
