@@ -1,3 +1,5 @@
 [user]
 	email = sam@zanca.dev
 	name = Sam Zanca
+[init]
+	defaultBranch = main

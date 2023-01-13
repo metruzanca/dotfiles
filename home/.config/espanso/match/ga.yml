@@ -2,3 +2,22 @@
 matches:
   - trigger: ":ga"
     replace: "sam.zanca@generalassemb.ly"
+
+  - trigger: ":feedback"
+    replace: "https://docs.google.com/forms/d/e/1FAIpQLSeKWcpOHHqxbyvBb3cZiqWb9mR8t08rN0oisV7n_116izMwRg/viewform"
+
+  - trigger: ":url"
+    replace: "https://git.generalassemb.ly/sei-noble/"
+  - trigger: ":start"
+    form: |
+      Good Morning Noble Team!
+      [[overview]]
+    form_fields:
+      overview:
+        multiline: true
+
+  - trigger: ":zoom"
+    replace: |
+      Classroom Zoom Link: https://generalassembly.zoom.us/my/sei.noble
+      Zoom Passcode: Noble117
+      Zoom Recordings: Noble117*

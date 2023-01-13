@@ -21,3 +21,7 @@ matches:
     replace: "https://cal.com/samzanca/15min"
   - trigger: ":cal"
     replace: "https://cal.com/samzanca/30min"
+  - trigger: ":meta"
+    replace: |
+      - trigger: ":trigger"
+        replace: "Nice!"
