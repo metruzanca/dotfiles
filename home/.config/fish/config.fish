@@ -40,8 +40,6 @@ set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
 # Volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 # Volta
 
 # Add homebrew to path
@@ -80,3 +78,6 @@ end
 if type -q direnv
     direnv hook fish | source
 end
+
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH

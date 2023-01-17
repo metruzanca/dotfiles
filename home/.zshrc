@@ -28,3 +28,6 @@ function load_plugin {
 if load_plugin "$HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh"; then
   # abbr import-aliases;
 fi
+# Volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
