@@ -1,0 +1,1 @@
+# alias notes="$EDITOR $HOME/noble/noble-notes"

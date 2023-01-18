@@ -1,6 +1,7 @@
 HISTSIZE=50000
 SAVEHIST=100000
 HISTFILE=$HOME/.zsh_history
+EDITOR=code
 
 # alt+arrow -> move between words
 bindkey "^[[1;3C" forward-word
@@ -24,6 +25,15 @@ function load_plugin {
   fi
   return 1
 }
+
+
+function source_all {
+  # 2>/dev/null will suppress stdout from commands.
+  # e.g. in this case it will _mute_ "no files inside of $1" when its empty.
+  for f in $1/*; do source $f; done 2>/dev/null
+}
+
+source_all "$HOME/.config/zsh"
 
 if load_plugin "$HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh"; then
   # abbr import-aliases;

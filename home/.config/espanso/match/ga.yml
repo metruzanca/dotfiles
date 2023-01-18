@@ -21,3 +21,6 @@ matches:
       Classroom Zoom Link: https://generalassembly.zoom.us/my/sei.noble
       Zoom Passcode: Noble117
       Zoom Recordings: Noble117*
+
+  - trigger: ":video"
+    replace: "https://generalassembly.zoom.us/my/sei.noble"
