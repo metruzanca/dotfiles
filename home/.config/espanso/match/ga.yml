@@ -9,18 +9,13 @@ matches:
   - trigger: ":url"
     replace: "https://git.generalassemb.ly/sei-noble/"
   - trigger: ":start"
-    form: |
+    replace: |
+      @channel
       Good Morning Noble Team!
-      [[overview]]
-    form_fields:
-      overview:
-        multiline: true
+      Heres today's schedule
 
   - trigger: ":zoom"
-    replace: |
-      Classroom Zoom Link: https://generalassembly.zoom.us/my/sei.noble
-      Zoom Passcode: Noble117
-      Zoom Recordings: Noble117*
-
-  - trigger: ":video"
     replace: "https://generalassembly.zoom.us/my/sei.noble"
+
+  - trigger: ":exit"
+    replace: "https://forms.gle/1ZKjUnjCZpbpTAQy5"
