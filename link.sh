@@ -60,3 +60,7 @@ done
 # if [[ "$(grep microsoft /proc/version)" ]]; then
 #   cp "$TOPATH/.config/espanso/match/base.yml" "/mnt/c/Users/Metru/AppData/Roaming/espanso/match/base.yml"
 # fi
+
+if [ -x "$(command -v espanso)" ]; then 
+  espanso restart
+fi
