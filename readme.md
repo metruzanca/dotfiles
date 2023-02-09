@@ -41,3 +41,11 @@ The `unix.sh` is the platform agnostic script that does the bulk of the heavy li
 
 ## Fonts
 - [FiraCode NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+
+
+---
+
+## MacOS shenanagins
+Disable two finger swipe for navigation. I need that for horrizontal scroll
+
+`defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE`
