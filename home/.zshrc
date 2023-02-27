@@ -18,7 +18,7 @@ if [ -x "$(command -v direnv)" ]; then
 fi
 
 # Plugins
-function load_plugin {
+function try_source {
   if test -f "$1"; then
     source $1
     return 0
@@ -35,9 +35,14 @@ function source_all {
 
 source_all "$HOME/.config/zsh"
 
-if load_plugin "$HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh"; then
-  # abbr import-aliases;
-fi
+# if try_source "$HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh"; then
+#   # abbr import-aliases;
+# fi
+
+try_source "$HOME/.config/git/aliases.sh"
+
 # Volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH="/opt/homebrew/opt/mongodb-community@5.0/bin:$PATH"
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
