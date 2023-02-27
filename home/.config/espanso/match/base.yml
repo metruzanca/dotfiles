@@ -7,8 +7,7 @@ matches:
         type: date
         params:
           format: "%m/%d/%Y"
-
-  - trigger: ":id"
+  - trigger: ":iso"
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -21,7 +20,14 @@ matches:
     replace: "https://cal.com/samzanca/15min"
   - trigger: ":cal"
     replace: "https://cal.com/samzanca/30min"
+
   - trigger: ":meta"
     replace: |
       - trigger: ":trigger"
         replace: "Nice!"
+
+  - trigger: ":links"
+    replace: "https://www.linkedin.com/in/samuele-zanca/"
+  - trigger: ":links"
+    replace: "https://github.com/metruzanca/"
+

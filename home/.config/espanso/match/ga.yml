@@ -9,5 +9,5 @@ matches:
   - trigger: ":exit"
     replace: "https://forms.gle/1ZKjUnjCZpbpTAQy5"
 
-- trigger: ":help"
-  replace: "https://git.generalassemb.ly/sei-noble/finding-solutions"
+  - trigger: ":help"
+    replace: "https://git.generalassemb.ly/sei-noble/finding-solutions"
