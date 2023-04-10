@@ -49,3 +49,6 @@ The `unix.sh` is the platform agnostic script that does the bulk of the heavy li
 Disable two finger swipe for navigation. I need that for horrizontal scroll
 
 `defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE`
+
+# BrewFile docs
+https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
