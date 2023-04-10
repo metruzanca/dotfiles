@@ -46,3 +46,8 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/opt/mongodb-community@5.0/bin:$PATH"
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+
+# pnpm
+export PNPM_HOME="/Users/sam.zanca/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
