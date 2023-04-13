@@ -8,6 +8,5 @@
 	current = rev-parse --abbrev-ref HEAD
 	undo = reset HEAD~1 --mixed
 	initial = git add . && git commit -m \"Initial Commit.\"
-	ac = !sh git add . && git commit -m /Users/sam.zanca/.config/git/aliases.sh
 [pull]
 	rebase = true
