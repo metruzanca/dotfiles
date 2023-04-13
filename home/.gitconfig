@@ -6,4 +6,4 @@
 [alias]
   rename = branch -m --
   undo = reset HEAD~1 --mixed
-  qc = "!f() { git add -A && git commit -m \"$1\" && git push; }; f"
+  qc = "!f() { git add -A && git commit -m \"$1\"; }; f"
