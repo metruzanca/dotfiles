@@ -4,9 +4,6 @@
 [init]
 	defaultBranch = main
 [alias]
-	rename = branch -m --
-	current = rev-parse --abbrev-ref HEAD
-	undo = reset HEAD~1 --mixed
-	initial = git add . && git commit -m \"Initial Commit.\"
-[pull]
-	rebase = true
+  rename = branch -m --
+  undo = reset HEAD~1 --mixed
+  qc = "!f() { git add -A && git commit -m \"$1\" && git push; }; f"
