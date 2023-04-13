@@ -8,8 +8,9 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
 autoload -Uz compinit && compinit
-# TODO linux path for brew isn't here
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)" # Macos
+# This should work for both
+eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 
 eval "$(starship init zsh)"
 
@@ -34,11 +35,6 @@ function source_all {
 }
 
 source_all "$HOME/.config/zsh"
-
-# if try_source "$HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh"; then
-#   # abbr import-aliases;
-# fi
-
 try_source "$HOME/.config/git/aliases.sh"
 
 # Volta
