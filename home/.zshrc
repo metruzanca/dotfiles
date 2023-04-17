@@ -8,9 +8,9 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
 autoload -Uz compinit && compinit
-# eval "$(/opt/homebrew/bin/brew shellenv)" # Macos
-# This should work for both
-eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)" # Macos
+# This should work for both - er.. $HOMEBREW_PREFIX isn't set on macos
+# eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 
 eval "$(starship init zsh)"
 
