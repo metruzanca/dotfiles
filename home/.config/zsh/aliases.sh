@@ -7,7 +7,9 @@ alias clipboard="tr -d '\n' | pbcopy"
 
 jira-branch() {
     if [ -z "$1" ]; then
-        echo "Usage: jira-branch <jira url> [dash-spaced-description]"
+        printf "Usage: jira-branch <jira url> [dash-spaced-description]\n\n"
+        printf "Examples: jira-branch https://jira.example.com/browse/ABC-123\n"
+        printf "          jira-branch https://jira.example.com/browse/ABC-123 \"some-description\"\n\n"
         return 1
     fi
     branch_name=$(echo "$1" | awk -F'/' '{print $NF}')
