@@ -2,3 +2,6 @@
 	path = private
 	url = git@github.com:metruzanca/dotfiles-private.git
 	branch = master
+[submodule "home/.config/alacritty/catppuccin"]
+	path = home/.config/alacritty/catppuccin
+	url = git@github.com:catppuccin/alacritty.git
