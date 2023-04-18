@@ -5,3 +5,4 @@
 # Node
 node_modules
 .env
+.envrc
