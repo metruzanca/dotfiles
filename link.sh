@@ -1,7 +1,11 @@
+#!/usr/bin/env bash
+
 if [ -x "$(command -v espanso)" ]; then 
   stow home;
   
-  stow private;
+  if [ -d "private" ]; then
+    stow private;
+  fi
 else
   echo "GNU stow not installed".
 fi
