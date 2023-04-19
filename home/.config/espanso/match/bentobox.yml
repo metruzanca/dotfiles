@@ -4,3 +4,5 @@ matches:
     replace: "samuele.zanca@fiserv.com"
   - trigger: ":email"
     replace: "samuelezanca@getbento.com"
+  - trigger: ":email"
+    replace: "samzanca@bentobox.com"

@@ -18,24 +18,29 @@ if [ -x "$(command -v direnv)" ]; then
   eval "$(direnv hook zsh)"
 fi
 
-# Plugins
+# Sources files and folders of files, if they exist
 function try_source {
   if test -f "$1"; then
     source $1
+    return 0
+  fi
+  if [ -d "$1" ]; then
+    # 2>/dev/null will suppress stdout from commands.
+    # e.g. in this case it will _mute_ "no files inside of $1" when its empty.
+    for f in $1/*; do source $f; done 2>/dev/null
     return 0
   fi
   return 1
 }
 
 
-function source_all {
-  # 2>/dev/null will suppress stdout from commands.
-  # e.g. in this case it will _mute_ "no files inside of $1" when its empty.
-  for f in $1/*; do source $f; done 2>/dev/null
-}
+# Plugin Manager - https://github.com/zplug/zplug
+try_source /opt/homebrew/opt/zplug/init.zsh;
+try_source $HOME/.config/zsh/.plugins.zsh
+zplug load;
 
-source_all "$HOME/.config/zsh"
-try_source "$HOME/.config/git/aliases.sh"
+
+try_source "$HOME/.config/zsh"
 
 # Volta
 export VOLTA_HOME="$HOME/.volta"
