@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# Python Related
+venv-install() {
+    deactivate &> /dev/null
+    # if no virtual environment exists, create one
+    if [[ ! -d .venv ]]; then
+        python3 -m venv .venv
+    fi
+    # activate the virtual environment
+    source .venv/bin/activate
+    # install the requirements
+    pip install -r requirements.txt
+}
+
+venv() {
+    # deactivate any existing virtual environment
+    deactivate &> /dev/null
+    # check if a .venv directory exists
+    if [[ -d .venv ]]; then
+        source .venv/bin/activate 
+    fi
+}
+
+cd() {
+    # do everything normal `cd` does
+    builtin cd "$@" || return 
+    # list the contents of the directory
+    ls;
+    # activate the virtual environment if it exists
+    venv;
+}
+
+venv;
