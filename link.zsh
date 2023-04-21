@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+# shellcheck disable=1071
 
 if [ ! -x "$(command -v stow)" ]; then
   echo "GNU stow not installed".
@@ -21,14 +22,7 @@ if [ -x "$(command -v espanso)" ]; then
 fi
 
 if [ -d "/opt/homebrew/opt/zplug" ]; then
-  zsh -c '
-    source /opt/homebrew/opt/zplug/init.zsh;
-    source $HOME/.config/zsh/.plugins.zsh
-    zplug install;
-  ';
-
-  if [ -x "$(command -v abbr)" ]; then 
-    abbr c;
-    abbr import-aliases;
-  fi
+  source /opt/homebrew/opt/zplug/init.zsh;
+  source $HOME/.config/zsh/.plugins.zsh
+  zplug install;
 fi

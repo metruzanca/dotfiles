@@ -1,3 +1,6 @@
+#!/usr/bin/env zsh
+# shellcheck disable=1071
+
 HISTSIZE=50000
 SAVEHIST=100000
 HISTFILE=$HOME/.zsh_history
@@ -39,8 +42,20 @@ try_source /opt/homebrew/opt/zplug/init.zsh;
 try_source $HOME/.config/zsh/.plugins.zsh
 zplug load;
 
-
 try_source "$HOME/.config/zsh"
+
+
+# Turn Abbr into aliases
+erase_keys() {
+  while read -r line; do
+    key=$(echo "$line" | cut -d= -f1 | tr -d '"')
+    abbr erase "$key" | silent;
+  done < /dev/stdin
+}
+
+# abbr c; # This doesn't work for some reason https://github.com/olets/zsh-abbr/issues/88
+abbr list | erase_keys
+abbr import-aliases | silent;
 
 # Volta
 export VOLTA_HOME="$HOME/.volta"
@@ -48,7 +63,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/opt/mongodb-community@5.0/bin:$PATH"
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 
+
 # pnpm
-export PNPM_HOME="/Users/sam.zanca/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+export PNPM_HOME="/Users/$USER/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end

@@ -1,3 +1,6 @@
+#!/usr/bin/env zsh
+# shellcheck disable=1071
+
 # This is a hidden file to avoid it being sourced twice when using try_source's loop
 
 zplug "zsh-users/zsh-autosuggestions";
