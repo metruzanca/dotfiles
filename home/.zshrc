@@ -18,7 +18,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)" # Macos
 eval "$(starship init zsh)"
 
 if [ -x "$(command -v direnv)" ]; then 
-  # eval "$(direnv hook zsh)"
+  eval "$(direnv hook zsh)"
 fi
 
 # Sources files and folders of files, if they exist
