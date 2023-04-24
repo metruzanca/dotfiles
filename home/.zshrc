@@ -44,7 +44,7 @@ zplug load;
 
 try_source "$HOME/.config/zsh"
 
-abbr -S import-aliases | silent;
+abbr -S import-aliases &>/dev/null 2>&1;
 
 # Volta
 export VOLTA_HOME="$HOME/.volta"
