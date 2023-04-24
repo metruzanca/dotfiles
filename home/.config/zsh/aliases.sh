@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 alias ls=lsd -a
 cd() { builtin cd "$@" && ls; }

@@ -18,7 +18,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)" # Macos
 eval "$(starship init zsh)"
 
 if [ -x "$(command -v direnv)" ]; then 
-  eval "$(direnv hook zsh)"
+  # eval "$(direnv hook zsh)"
 fi
 
 # Sources files and folders of files, if they exist
@@ -44,18 +44,7 @@ zplug load;
 
 try_source "$HOME/.config/zsh"
 
-
-# Turn Abbr into aliases
-erase_keys() {
-  while read -r line; do
-    key=$(echo "$line" | cut -d= -f1 | tr -d '"')
-    abbr erase "$key" | silent;
-  done < /dev/stdin
-}
-
-# abbr c; # This doesn't work for some reason https://github.com/olets/zsh-abbr/issues/88
-abbr list | erase_keys
-abbr import-aliases | silent;
+abbr -S import-aliases | silent;
 
 # Volta
 export VOLTA_HOME="$HOME/.volta"

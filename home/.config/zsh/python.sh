@@ -13,9 +13,17 @@ venv-install() {
     pip install -r requirements.txt
 }
 
+# Venv is super inconsistent for some reason. sigh.
+
 venv() {
-    # deactivate any existing virtual environment
-    deactivate &> /dev/null
+    # Deactivate the venv if the cwd is not a subdirectory of the venv
+    # if [ -v "$VIRTUAL_ENV" ]; then
+    #     prefix=$(dirname "$VIRTUAL_ENV");
+    #     echo "$(pwd) $prefix";
+    #     if [[ "$(pwd)" != "$prefix"* ]]; then
+    #         deactivate &> /dev/null
+    #     fi
+    # fi
     # check if a .venv directory exists
     if [[ -d .venv ]]; then
         source .venv/bin/activate 
