@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+alias pm="python3 manage.py"
+
 # Python Related
 venv-install() {
     deactivate &> /dev/null
