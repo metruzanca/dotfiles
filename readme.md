@@ -1,10 +1,28 @@
 # Dotfiles
 
+Dotfiles repo powered GNU Stow. Stow takes care of symlinking file structures in this repo to local machine's $HOME.
+
+This repo supports both MacOS and Linux machines.
+
+Unfortunately, not POSIX compliant. Maybe will be in the future. Both Fish and ZSH are not POSIX :( and I've got configs for both tools in here. Most recently leaning into ZSH, though I still have a machine running my old fish config thats in here.
+
 ## Usage
 1. Clone
 2. Run `link.sh`: which will symlink all files in `home/` to the `$HOME` directory.
 
 If adding a new file or pulling changes, re-run `link.sh`.
+
+## Structure
+- `link.zsh`: is the core of the dotfiles setup. Running this will:
+    - Run stow on `home` & `private`.
+    - Installs zsh plugins via `zplug`
+    - Restarts [espanso](https://espanso.org) to reload the config.
+    - TODO sync macos settings.
+- `home`: is where the actual dotfiles live.
+- `private`: is just like home but is a private repo thats submodule'd into this repo. Inside `private` I mainly have `.config/zsh/<files>` so those will be loaded when I source the whole directory in my `$HOME/.zshrc`.
+- `os`: holds some workstation setup scripts as well as some other MacOS WIP stuff.
+
+> Aside from the `private` submodule, this repo also submodules the [catppuccin theme](https://github.com/catppuccin/alacritty) inside the alacritty config folder.
 
 ## OSs
 
@@ -32,11 +50,6 @@ The `os` folder holds scripts to quickly get new machines configured.
 
 
 ---
-
-## MacOS shenanagins
-Disable two finger swipe for navigation. I need that for horrizontal scroll
-
-`defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE`
 
 # BrewFile docs
 https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
