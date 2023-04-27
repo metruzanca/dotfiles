@@ -26,3 +26,20 @@ if [ -d "/opt/homebrew/opt/zplug" ]; then
   source $HOME/.config/zsh/.plugins.zsh
   zplug install;
 fi
+
+# Convert plist xml to binary
+# plutil -convert binary1 file.plist
+# Convert binary to plist xml
+# plutil -convert xml1 file.plist
+
+if [ "$(uname)" = "Darwin" ]; then
+  # # Convert Plist preferences files to binary.
+  # for file in $HOME/.config/**/*.plist; do
+  #   # plutil -convert binary1 "$file";
+  #   echo "$file"
+  # done
+  for file in os/macos/defaults/*; do
+    # defaults write $file "$(cat "$file")"
+    echo $file
+  done
+fi
