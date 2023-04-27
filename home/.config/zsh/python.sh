@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # If no venv, create one
-alias venv-create='[[ ! -d .venv ]] && python3 -m venv .venv'
+alias venv-create='[[ ! -d .venv ]] && python3 -m venv .venv && source .venv/bin/activate'
 # if venv, activate it
 alias venv-activate='[[ -d .venv ]] && source .venv/bin/activate'
 # If we're in a venv, install requirements
