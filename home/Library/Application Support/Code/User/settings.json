@@ -1,0 +1,30 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.env.osx": {},
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "editor.inlineSuggest.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.wordBasedSuggestions": false,
+    "python.terminal.activateEnvironment": false,
+    "shellcheck.ignorePatterns": {
+        "**/*.zsh": false,
+        "**/*.zshrc": false,
+        "**/zshrc": false
+    },
+    "terminal.integrated.fontSize": 14,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.importFormat": "relative",
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.suggest.showKeywords": false,
+}
