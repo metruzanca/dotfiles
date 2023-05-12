@@ -1,8 +1,0 @@
-# https://espanso.org/docs/
-matches:
-  - trigger: ":email"
-    replace: "samuele.zanca@fiserv.com"
-  - trigger: ":email"
-    replace: "samuelezanca@getbento.com"
-  - trigger: ":email"
-    replace: "samzanca@bentobox.com"
