@@ -12,6 +12,7 @@ jira() {
     local green=$(tput setaf 2)
     local reset=$(tput sgr0)
     local bold=$(tput bold)
+    local red=$(tput setaf 1)
 
     if [ -z "$1" ]; then
         printf "Create a new branch for a JIRA ticket or check out an existing one.\n\n"
@@ -28,6 +29,7 @@ jira() {
     # If a branch for that ticket already exists, check it out
     local existing=$(git branch | grep -m 1 "$branch_name" | trim)
     if [ -n "$existing" ]; then
+        echo "${red}Found existing branch${reset} - Checking out: $existing"
         git checkout "$existing"
         return 0
     fi
