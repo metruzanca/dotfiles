@@ -38,7 +38,8 @@
     "python.analysis.importFormat": "relative",
     "editor.suggest.showKeywords": false, // Python will show keywords in suggestions, for some reason.
     // "python.analysis.typeCheckingMode": "basic", // Sometimes this is useful
-    
+    "python.defaultInterpreterPath": "./.venv/bin/python", // At work we use .venv folders for python
+
     // JS/TS
     "javascript.validate.enable": true,
     "editor.codeActionsOnSave": {
