@@ -56,7 +56,9 @@
         "**/zshrc": false
     },
     "cSpell.userWords": [
-        "Bento", "shellcheck"
+        "Bento",
+        "BENTOBOX",
+        "shellcheck"
     ],
 
 }

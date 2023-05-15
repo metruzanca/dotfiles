@@ -4,6 +4,9 @@
 [init]
 	defaultBranch = main
 [alias]
+	# This is a utility for other custom aliases
+	master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
+	checkout-clean = "!git-checkout-clean"
 	rename = branch -m --
 	undo = reset HEAD~1 --mixed
 	qc = "!f() { git add -A && git commit -m \"$@\"; }; f"
