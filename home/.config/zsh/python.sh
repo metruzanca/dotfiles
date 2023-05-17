@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# If no venv, create one
-alias venv-create='[[ ! -d .venv ]] && python3 -m venv .venv && source .venv/bin/activate'
-# if venv, activate it
-alias venv-activate='[[ -d .venv ]] && source .venv/bin/activate'
-# If we're in a venv, install requirements
+alias venv-create='python3 -m venv .venv && source .venv/bin/activate'
+alias venv='source .venv/bin/activate'
+# I want to prevent installing globally so I'm checking if the virtual environment is active
 alias venv-install='[ -n "$VIRTUAL_ENV" ] && pip install -r requirements.txt'
 # Convenience alias
 alias pm='python3 manage.py'
