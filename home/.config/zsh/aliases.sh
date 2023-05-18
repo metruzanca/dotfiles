@@ -62,7 +62,8 @@ git-checkout-clean() {
     git branch -D "$1" &>/dev/null;
     git checkout "$1" &>/dev/null;
 
-    if [ "$(git rev-parse --abbrev-ref HEAD)" = "staging" ]; then
+    # Generally when this command fails, it endes up on master and not $1.
+    if [ "$(git rev-parse --abbrev-ref HEAD)" = "$1" ]; then
         printf "Checked out ${green}${bold}fresh${reset} version of ${pink}${bold}${1}${reset} from remote.\n"
     fi
 }
