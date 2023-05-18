@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-# shellcheck disable=1071
+# shellcheck disable=SC1071
 
 HISTSIZE=50000
 SAVEHIST=100000
@@ -61,3 +61,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Run message of the day
+motd
