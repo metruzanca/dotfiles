@@ -4,7 +4,8 @@
 HISTSIZE=50000
 SAVEHIST=100000
 HISTFILE=$HOME/.zsh_history
-EDITOR=code
+EDITOR=code-insiders
+alias code=code-insiders
 
 # alt+arrow -> move between words
 bindkey "^[[1;3C" forward-word
