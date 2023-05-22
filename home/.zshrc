@@ -63,4 +63,4 @@ esac
 # pnpm end
 
 # Run message of the day
-motd
+motd;
