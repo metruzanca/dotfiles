@@ -1,25 +1,9 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2155,SC2059,SC2120
 
-# format_time() {
-#   hours=$1
-#   minutes=$2
-
-#   if [[ $hours -eq 0 ]]; then
-#     echo "${minutes}mins"
-#   elif [[ $minutes -eq 0 ]]; then
-#     echo "${hours}hrs"
-#   else
-#     echo "${hours}hrs ${minutes}mins"
-#   fi
-# }
-
-time_left() {
-  local now=$(date +%s)
-  local target=$(date -j -f "%H:%M" "$1" +%s)
-  local diff=$(($target - $now))
-  local hours=$(($diff / 3600))
-  local minutes=$((($diff / 60) % 60))    
+format_time() {
+  hours=$1
+  minutes=$2
 
   if [[ $hours -eq 0 ]]; then
     echo "${minutes}mins"
@@ -28,6 +12,14 @@ time_left() {
   else
     echo "${hours}hrs ${minutes}mins"
   fi
+}
+
+time_left() {
+  local now=$(date +%s)
+  local target=$(date -j -f "%H:%M" "$1" +%s)
+  local diff=$(($target - $now))
+
+  format_time $((diff / 3600)) $(((diff / 60) % 60))
 }
 
 between() {
