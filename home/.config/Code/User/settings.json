@@ -2,7 +2,7 @@
     // Theming
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
     // Editor Settings
     "git.enableSmartCommit": true,
