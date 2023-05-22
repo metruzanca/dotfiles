@@ -59,13 +59,14 @@ motd() {
   local bold=$(tput bold)
   local reset=$(tput sgr0)
   local orange=$(tput setaf 3)
-  day=$(date +%A)
+  local day=$(date +%A)
   if [ "$day" = "Friday" ]; then
-    printf "${bold}${orange}TGIF! ${red}No Deploys Today.${reset}"
+    printf "${bold}${orange}TGIF! ${red}No Deploys${reset} until Monday at ${ranges[0]}."
     return 0;
   else
+    local now=$(date +%H:%M)
     for (( i=0; i<${#ranges[@]}; i+=2 )); do
-      if between "$(date +%H:%M)" "${ranges[@]:$i:2}"; then
+      if between "$now" "${ranges[@]:$i:2}"; then
         printf "$(time_left "${ranges[$i+1]}") left to deploy!\n"
         return 0;
       fi
