@@ -56,6 +56,6 @@ git-checkout-clean() {
 
     # Generally when this command fails, it endes up on master and not $1.
     if [ "$(git rev-parse --abbrev-ref HEAD)" = "$1" ]; then
-        printf "Checked out ${green}${bold}fresh${reset} version of ${pink}${bold}${1}${reset} from remote.\n"
+        printf "Checked out a ${green}${bold}fresh${reset} version of ${pink}${bold}${1}${reset} from remote.\n"
     fi
 }
