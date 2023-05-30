@@ -30,4 +30,7 @@ matches:
     replace: "https://www.linkedin.com/in/samuele-zanca/"
   - trigger: ":links"
     replace: "https://github.com/metruzanca/"
+  - trigger: ":shrug"
+    replace: "¯\\_(ツ)_/¯"
+
 

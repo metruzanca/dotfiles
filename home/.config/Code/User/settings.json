@@ -53,12 +53,19 @@
     "shellcheck.ignorePatterns": {
         "**/*.zsh": false,
         "**/*.zshrc": false,
-        "**/zshrc": false
+        "**/zshrc": false,
+        "**/*.env*": true
     },
     "cSpell.userWords": [
         "Bento",
         "BENTOBOX",
         "shellcheck"
     ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
 
 }

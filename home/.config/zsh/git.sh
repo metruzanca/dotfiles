@@ -50,6 +50,7 @@ git-checkout-clean() {
         return 1;
     fi
     
+    git stash;
     git checkout "$(git master)" &>/dev/null;
     git branch -D "$1" &>/dev/null;
     git checkout "$1" &>/dev/null;
