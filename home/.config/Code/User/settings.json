@@ -67,5 +67,6 @@
         "markdown": false,
         "scminput": false
     },
+    "explorer.confirmDragAndDrop": false,
 
 }
