@@ -61,7 +61,7 @@ git-checkout-clean() {
     fi
 }
 
-function rebase-other {
+rebase-other() {(
     if [ -z "$1" ]; then
         local red=$(tput setaf 1)
         local reset=$(tput sgr0)
@@ -69,6 +69,7 @@ function rebase-other {
         echo "Usage: rebase-other <branch-name>"
         return 1
     fi
+    set -e
     local current_branch=$(git rev-parse --abbrev-ref HEAD)
     local master=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
     git stash
@@ -77,4 +78,4 @@ function rebase-other {
     git push -f
     git checkout "$current_branch"
     git stash pop
-}
+)}
