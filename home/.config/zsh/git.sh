@@ -60,3 +60,21 @@ git-checkout-clean() {
         printf "Checked out a ${green}${bold}fresh${reset} version of ${pink}${bold}${1}${reset} from remote.\n"
     fi
 }
+
+function rebase-other {
+    if [ -z "$1" ]; then
+        local red=$(tput setaf 1)
+        local reset=$(tput sgr0)
+        printf "$(red)rebase-other$(reset) - will checkout the provided branch, rebase it on master, and push it back up then checkout the original branch."
+        echo "Usage: rebase-other <branch-name>"
+        return 1
+    fi
+    local current_branch=$(git rev-parse --abbrev-ref HEAD)
+    local master=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
+    git stash
+    git checkout "$1"
+    git pull --rebase origin "$master"
+    git push -f
+    git checkout "$current_branch"
+    git stash pop
+}
