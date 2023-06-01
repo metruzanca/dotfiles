@@ -72,10 +72,10 @@ rebase-other() {(
     set -e
     local current_branch=$(git rev-parse --abbrev-ref HEAD)
     local master=$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)
-    git stash
+    # git stash
     git checkout "$1"
     git pull --rebase origin "$master"
     git push -f
     git checkout "$current_branch"
-    git stash pop
+    # git stash pop
 )}
