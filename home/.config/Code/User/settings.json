@@ -68,5 +68,7 @@
         "scminput": false
     },
     "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.tabSize": 2,
 
 }
