@@ -43,7 +43,7 @@ can_deploy() {
   local green=$(tput setaf 2)
   local day=$(date +%A)
   if [ "$day" = "Friday" ]; then
-    printf "${bold}${orange}TGIF! ${red}No Deploys${reset} until Monday at ${ranges[0]}."
+    printf "${bold}${orange}TGIF! ${red}No Deploys${reset} until Monday\n"
     return 0;
   else
     local now=$(date +%H:%M)
@@ -57,8 +57,42 @@ can_deploy() {
   printf "${red}No more deploys${reset}\n"
 }
 
+days_since() {
+  # Get the starting date from the first argument
+  local start_date=$1
+
+  # Calculate the number of seconds between the starting date and now
+  local start_seconds=$(date -j -f "%Y-%m-%d" "$start_date" +%s)
+  local now_seconds=$(date +%s)
+  local diff_seconds=$((now_seconds - start_seconds))
+
+  # Calculate the number of days between the starting date and now
+  echo $((diff_seconds / 86400 + 1))
+}
+
+weekends_since() {
+  # Get the starting date from the first argument
+  local start_date=$1
+
+  # Calculate the number of seconds between the starting date and now
+  local start_seconds=$(date -j -f "%Y-%m-%d" "$start_date" +%s)
+  local now_seconds=$(date +%s)
+  local diff_seconds=$((now_seconds - start_seconds))
+
+  # Calculate the number of days between the starting date and now
+  echo $(((diff_seconds / 86400 / 7) * 2))
+}
+
 motd() {
   can_deploy \
     "08:00" "11:30" \
     "13:30" "16:00";
+  
+  # "2023-06-07" is the start of sprint 113
+  local SPRINT_DATE="2023-06-07"
+
+  local sprint_start=$(days_since $SPRINT_DATE)
+  local weekend_days=$(weekends_since $SPRINT_DATE)
+  print "Sprint day $(((sprint_start - weekend_days) % 10)) of 10"
+
 }
