@@ -79,3 +79,29 @@ rebase-other() {(
     git checkout "$current_branch"
     # git stash pop
 )}
+
+git-pr() {
+    local red=$(tput setaf 1)
+    local reset=$(tput sgr0)
+    if ! command -v gh &> /dev/null; then
+        printf "${red}Github Cli is required for this script.${reset}\n"
+    fi
+    if ! gh auth status &> /dev/null; then
+        printf "${red}Github Cli is not authenticated, running authentication.${reset}\n"
+        gh auth login
+    fi
+
+    # given a branch like ABC-123-some-description, this will return ABC-123
+    local jira_id=$(git rev-parse --abbrev-ref HEAD | cut -d'-' -f1-2)
+
+    local description=$1
+    # create pr with gh cli with multiline body
+    gh pr create --body "
+        ## Description
+        $description
+
+        **Ticket**: [$jira_id](https://getbentobox.atlassian.net/browse/$jira_id)
+    ";
+
+    gh pr view --web;
+}
