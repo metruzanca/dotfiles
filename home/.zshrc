@@ -62,5 +62,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Golang
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH"
+
 # Run message of the day
 motd;
