@@ -59,9 +59,11 @@
     "cSpell.userWords": [
         "Bento",
         "BENTOBOX",
+        "navs",
         "noice",
         "SENSEI",
-        "shellcheck"
+        "shellcheck",
+        "testid"
     ],
     "github.copilot.enable": {
         "*": true,
@@ -72,5 +74,9 @@
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.tabSize": 2,
-
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.autohide": true,
+    "editor.mouseWheelScrollSensitivity": 0.2,
+    "terminal.integrated.defaultProfile.osx": "zsh"
 }

@@ -88,11 +88,11 @@ motd() {
     "08:00" "11:30" \
     "13:30" "16:00";
   
-  # "2023-06-07" is the start of sprint 113
-  local SPRINT_DATE="2023-06-07"
+  # Doesn't work properly
+  # local SPRINT_DATE="2023-07-05"
 
-  local sprint_start=$(days_since $SPRINT_DATE)
-  local weekend_days=$(weekends_since $SPRINT_DATE)
-  print "Sprint day $(((sprint_start - weekend_days) % 10)) of 10"
+  # local sprint_start=$(days_since $SPRINT_DATE)
+  # local weekend_days=$(weekends_since $SPRINT_DATE)
+  # print "Sprint day $(((sprint_start - weekend_days) % 10)) of 10"
 
 }
