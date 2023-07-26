@@ -78,5 +78,6 @@
     "editor.minimap.renderCharacters": false,
     "editor.minimap.autohide": true,
     "editor.mouseWheelScrollSensitivity": 0.2,
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "bookmarks.saveBookmarksInProject": true
 }

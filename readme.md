@@ -53,3 +53,11 @@ The `os` folder holds scripts to quickly get new machines configured.
 
 # BrewFile docs
 https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
+
+
+---
+
+## TODO
+- Checkout [Yabai](https://github.com/koekeishiya/yabai) for MacOS
+- [Zellij](https://github.com/zellij-org/zellij) instead of tmux
+- [Zed](https://zed.dev/) Editor

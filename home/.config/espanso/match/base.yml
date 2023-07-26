@@ -30,7 +30,3 @@ matches:
     replace: "https://www.linkedin.com/in/samuele-zanca/"
   - trigger: ":links"
     replace: "https://github.com/metruzanca/"
-  - trigger: ":shrug"
-    replace: "¯\\_(ツ)_/¯"
-  - trigger: ":noice"
-    replace: "![Micheal Rosen saying Noice](https://media.giphy.com/media/yJFeycRK2DB4c/giphy.gif)"
