@@ -9,6 +9,6 @@ matches:
   - trigger: ":headdesk"
     replace: "![](https://media.tenor.com/VXXnQAaO7PwAAAAC/head-desk-head-bang.gif)"
   - trigger: ":what"
-    replace: "![](https://media.tenor.com/9V9KVOEQ_8YAAAAC/pikachu-blink.gif)"
+    replace: "![](https://i.imgur.com/kVXlPlV.gif)"
   - trigger: ":happening"
     replace: "![](https://media.tenor.com/tK5fR0B-l5kAAAAC/its-happening.gif)"
