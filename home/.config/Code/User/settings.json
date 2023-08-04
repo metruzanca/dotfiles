@@ -4,6 +4,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
+    "editor.fontSize": 13,
     // Editor Settings
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
@@ -59,6 +60,7 @@
     "cSpell.userWords": [
         "Bento",
         "BENTOBOX",
+        "emailblast",
         "navs",
         "noice",
         "SENSEI",
@@ -79,5 +81,8 @@
     "editor.minimap.autohide": true,
     "editor.mouseWheelScrollSensitivity": 0.2,
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "bookmarks.saveBookmarksInProject": true
+    "bookmarks.saveBookmarksInProject": true,
+    "bookmarks.sideBar.countBadge": "off",
+    "bookmarks.keepBookmarksOnLineDelete": true,
+    "bookmarks.useWorkaroundForFormatters": true,
 }
