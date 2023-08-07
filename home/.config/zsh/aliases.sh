@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #shellcheck disable=SC2155,SC2059
 
-alias ls=lsd -a
 alias dot='$EDITOR $HOME/dotfiles'
 cd() { builtin cd "$@" && ls; }
 
