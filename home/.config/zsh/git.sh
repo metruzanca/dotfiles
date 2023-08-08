@@ -33,7 +33,7 @@ jira() {
 
     # Optionally add description
     if [ -n "$2" ]; then
-        branch_name="$branch_name-$2"
+        branch_name="$branch_name/$2"
     fi
     git checkout -b "$branch_name"
 }
