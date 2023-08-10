@@ -7,3 +7,6 @@ command_timeout = 1000
 [line_break]
 disabled = true
 
+[git_status]
+# I don't like seeing stashes since it makes worry that I forgot to commit something
+stashed = ''
