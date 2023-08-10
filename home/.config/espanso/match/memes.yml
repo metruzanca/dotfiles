@@ -16,3 +16,6 @@ matches:
     replace: "![it's happening!!1](https://media.tenor.com/tK5fR0B-l5kAAAAC/its-happening.gif)"
   - trigger: ":wow"
     replace: "![mind blowing](https://media.tenor.com/3eIvVsG3yPYAAAAd/the-universe-tim-and-eric-mind-blown.gif)"
+  - trigger: ":css"
+    replace: "![family guy css](https://tenor.com/YzGw.gif)"
+    
