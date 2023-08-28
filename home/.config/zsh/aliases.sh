@@ -9,3 +9,9 @@ cd() { builtin cd "$@" && ls; }
 function calc {
     echo "$@" | bc
 }
+function notify {
+    osascript -e "display notification \"$*\""
+}
+
+# use T to log to stderr then pipe into pbcopy
+alias otp='echo $TOTP_TOKEN | totp-cli instant | pbcopy'

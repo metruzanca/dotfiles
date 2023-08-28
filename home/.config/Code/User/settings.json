@@ -85,4 +85,5 @@
     "bookmarks.sideBar.countBadge": "off",
     "bookmarks.keepBookmarksOnLineDelete": true,
     "bookmarks.useWorkaroundForFormatters": true,
+    "autoHide.autoHideReferences": false,
 }
