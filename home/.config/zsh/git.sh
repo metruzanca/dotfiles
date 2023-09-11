@@ -111,3 +111,5 @@ $description
 
 **Ticket**: [$jira_id](https://getbentobox.atlassian.net/browse/$jira_id)"
 }
+
+alias ssh2https='git remote set-url origin $(git remote get-url origin | sed "s/^git@github.com:/https:\/\/github.com\//")'
