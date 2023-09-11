@@ -2,6 +2,13 @@
 #shellcheck disable=SC2155,SC2059
 
 alias dot='$EDITOR $HOME/dotfiles'
+
+# If lsd is installed use that
+if [ -x "$(command -v lsd)" ]; then 
+  alias ls="lsd"
+fi
+
+# if lsd is aliased to ls above, this will use lsd instead.
 cd() { builtin cd "$@" && ls; }
 
 # Cool, it works! But I don't think I'll need it.
