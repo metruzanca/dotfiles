@@ -86,4 +86,9 @@
     "bookmarks.keepBookmarksOnLineDelete": true,
     "bookmarks.useWorkaroundForFormatters": true,
     "autoHide.autoHideReferences": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }

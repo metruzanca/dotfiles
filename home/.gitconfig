@@ -9,6 +9,7 @@
 	checkout-clean = "!git-checkout-clean"
 	rename = branch -m --
 	undo = reset HEAD~1 --mixed
+	co = checkout
 	qc = "!f() { git add -A && git commit -m \"$@\"; }; f"
 	qcn = "!f() { git add -A && git commit --no-verify -m \"$@\"; }; f"
 	publish = !sh -c \"git push --set-upstream origin $(git branch --show-current)\"
