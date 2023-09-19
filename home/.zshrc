@@ -69,9 +69,9 @@ export PATH="$PATH:$GOPATH"
 # Run message of the day
 motd;
 
-# bun completions
-[ -s "/Users/samuele.zanca/.bun/_bun" ] && source "/Users/samuele.zanca/.bun/_bun"
-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME.bun/_bun"
