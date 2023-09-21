@@ -65,7 +65,8 @@
         "noice",
         "SENSEI",
         "shellcheck",
-        "testid"
+        "testid",
+        "Unlayer"
     ],
     "github.copilot.enable": {
         "*": true,
@@ -76,7 +77,6 @@
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.tabSize": 2,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.minimap.renderCharacters": false,
     "editor.minimap.autohide": true,
     "editor.mouseWheelScrollSensitivity": 0.2,
@@ -91,4 +91,5 @@
         120
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": -1,
 }
