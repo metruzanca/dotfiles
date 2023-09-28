@@ -6,7 +6,7 @@
 [alias]
 	# This is a utility for other custom aliases
 	master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
-	checkout-clean = "!git-checkout-clean"
+	fresh = "!~/.config/git/fresh.sh"
 	rename = branch -m --
 	undo = reset HEAD~1 --mixed
 	co = checkout

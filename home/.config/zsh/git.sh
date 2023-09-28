@@ -38,28 +38,6 @@ jira() {
     git checkout -b "$branch_name"
 }
 
-git-checkout-clean() {
-    local reset=$(tput sgr0)
-    local red=$(tput setaf 1)
-    local green=$(tput setaf 2)
-    local pink=$(tput setaf 5)
-    local bold=$(tput bold)
-    if [ -z "$1" ]; then
-        printf "${red}Error: No argument provided.${reset}\n\n";
-        printf "Usage: git-checkout-clean <branch-name> - deletes the branch locally and checks out the remote version.\n";
-        return 1;
-    fi
-    
-    git checkout "$(git master)" &>/dev/null;
-    git branch -D "$1" &>/dev/null;
-    git checkout "$1" &>/dev/null;
-
-    # Generally when this command fails, it endes up on master and not $1.
-    if [ "$(git rev-parse --abbrev-ref HEAD)" = "$1" ]; then
-        printf "Checked out a ${green}${bold}fresh${reset} version of ${pink}${bold}${1}${reset} from remote.\n"
-    fi
-}
-
 rebase-other() {(
     if [ -z "$1" ]; then
         local red=$(tput setaf 1)
