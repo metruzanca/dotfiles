@@ -16,7 +16,8 @@ fi
 
 target="$1"
 
-# if current branch is target, checkout master
+# if current branch is target, checkout master. This is needed because you get
+# an error if you try to delete a branch you're currently on
 if [ "$(git rev-parse --abbrev-ref HEAD)" = "$target" ]; then
   master="$(git remote show origin | grep 'HEAD branch' | cut -d' ' -f5)"
   git checkout "$master" &>/dev/null;
