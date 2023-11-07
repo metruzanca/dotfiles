@@ -85,3 +85,10 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 # Golang
 set -gx GOPATH "$HOME/go"
 set -gx PATH "$GOPATH" $PATH
+
+# SurrealDB
+set -gx PATH "$HOME/.surrealdb" $PATH
+
+# Fly.io
+set -gx FLYCTL_INSTALL "$HOME/.fly"
+set -gx PATH "$FLYCTL_INSTALL/bin" $PATH
