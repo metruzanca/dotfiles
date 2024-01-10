@@ -1,6 +1,6 @@
 # ---------- Variables ----------
 export nvm_default_version="v16.18.1"
-export EDITOR="code"
+export EDITOR="code-insiders"
 export C="/mnt/c"
 
 if type -q bass
@@ -16,7 +16,12 @@ end
 # wsl username should be identical (case sensitive)
 
 # Since alacritty is installed on the host machine
-abbr rc "$EDITOR ~/dev/dotfiles"
+abbr ci code-insiders
+abbr w "cd /mnt/c/Users/samue/"
+
+# Projects
+abbr dot "$EDITOR ~/dev/dotfiles"
+abbr z "$EDITOR /mnt/c/Users/samue/Documents/zanca.dev-quartz"
 
 if test $isWSL
     abbr winget "winget.exe"
@@ -92,3 +97,10 @@ set -gx PATH "$HOME/.surrealdb" $PATH
 # Fly.io
 set -gx FLYCTL_INSTALL "$HOME/.fly"
 set -gx PATH "$FLYCTL_INSTALL/bin" $PATH
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+# opam configuration
+source /home/szanca/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
