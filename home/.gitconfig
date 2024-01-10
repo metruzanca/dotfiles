@@ -1,21 +1,21 @@
 [user]
-	email = samuele@zanca.dev
-	name = Sam Zanca
+  email = samuele@zanca.dev
+  name = Sam Zanca
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [alias]
-	# This is a utility for other custom aliases
-	master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
-  # Deleted local version and re-checkout branch from remote
-	fresh = "!~/.config/git/fresh.sh"
-	# Oh stage is a git command... I guess I'll use this instead
-	rename = branch -m --
-	undo = reset HEAD~1 --mixed
-	co = checkout
-	# Quick commit everything
-	qc = "!f() { git add -A && git commit -m \"$@\"; }; f"
-	# Quickly no-verify commit staged changes
-	qcn = "!f() { git commit --no-verify -m \"$@\"; }; f"
-	publish = !sh -c \"git push --set-upstream origin $(git branch --show-current)\"
+  # This is a utility for other custom aliases
+  master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
+  # Delete local version and re-checkout branch from remote
+  fresh = "!~/.config/git/fresh.sh"
+  # Oh stage is a git command... I guess I'll use this instead
+  rename = branch -m --
+  undo = reset HEAD~1 --mixed
+  co = checkout
+  # Quick commit everything
+  qc = "!f() { git add -A && git commit -m \"$@\"; }; f"
+  # Quickly no-verify commit staged changes
+  qcn = "!f() { git commit --no-verify -m \"$@\"; }; f"
+  publish = !sh -c \"git push --set-upstream origin $(git branch --show-current)\"
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
