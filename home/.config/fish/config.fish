@@ -92,7 +92,7 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 # Golang
 # Update go e.g. https://tecadmin.net/how-to-install-go-on-ubuntu-20-04/
 # set -gx GOPATH "$HOME/go"
-set -gx PATH "/usr/local/go/bin" $PATH
+set -gx PATH "$GOPATH/bin" $PATH
 
 # SurrealDB
 set -gx PATH "$HOME/.surrealdb" $PATH
