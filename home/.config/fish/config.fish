@@ -3,6 +3,8 @@ export nvm_default_version="v16.18.1"
 export EDITOR="code-insiders"
 export C="/mnt/c"
 
+# source $HOME/.config/fish/env.fish
+
 if type -q bass
     bass source $HOME/.config/fish/functions.sh
     bass source $HOME/.config/fish/is_wsl.sh
@@ -16,7 +18,7 @@ end
 # wsl username should be identical (case sensitive)
 
 # Since alacritty is installed on the host machine
-abbr ci code-insiders
+abbr c "$EDITOR"
 abbr w "cd /mnt/c/Users/samue/"
 
 # Projects
@@ -52,9 +54,9 @@ eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # ---------- Fish Shell configuration ----------
 
-
 function fish_greeting
-    macchina
+  # This function empty silences the default message
+  # macchina
 end
 
 
@@ -88,8 +90,9 @@ set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # Golang
+# Update go e.g. https://tecadmin.net/how-to-install-go-on-ubuntu-20-04/
 set -gx GOPATH "$HOME/go"
-set -gx PATH "$GOPATH" $PATH
+set -gx PATH "$GOPATH/bin" $PATH
 
 # SurrealDB
 set -gx PATH "$HOME/.surrealdb" $PATH
