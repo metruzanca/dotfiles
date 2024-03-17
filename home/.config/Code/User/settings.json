@@ -1,6 +1,6 @@
 {
     // Theming
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Catppuccin Macchiato Bordered",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
@@ -44,7 +44,7 @@
     // JS/TS
     "javascript.validate.enable": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
 
     /** 
@@ -81,7 +81,7 @@
     "editor.minimap.renderCharacters": false,
     "editor.minimap.autohide": true,
     "editor.mouseWheelScrollSensitivity": 0.2,
-    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.osx": "fish",
     "bookmarks.saveBookmarksInProject": true,
     "bookmarks.sideBar.countBadge": "off",
     "bookmarks.keepBookmarksOnLineDelete": true,
