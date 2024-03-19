@@ -8,3 +8,5 @@ family = "FiraCode Nerd Font"
 
 [window]
 opacity = 0.85
+startup_mode = "SimpleFullscreen"
+padding = { x = 0, y = 5 }
