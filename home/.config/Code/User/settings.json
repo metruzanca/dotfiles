@@ -92,4 +92,5 @@
         120
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "console-ninja.featureSet": "Community",
 }

@@ -75,3 +75,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 try_source "$HOME.bun/_bun"
+PATH=~/.console-ninja/.bin:$PATH

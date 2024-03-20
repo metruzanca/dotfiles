@@ -861,5 +861,9 @@ require('lazy').setup({
   },
 })
 
+-- Personal Addition:
+-- Allows h to move to previous line when at the start and same for l
+vim.opt.ww = 'h,l'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
