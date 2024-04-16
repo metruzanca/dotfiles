@@ -1,16 +1,8 @@
-# ---------- Variables ----------
-# export nvm_default_version="v16.18.1"
-export EDITOR="code"
-export C="/mnt/c"
+export EDITOR="nvim"
 
-if type -q bass
-    bass source $HOME/.config/fish/functions.sh
-    bass source $HOME/.config/fish/is_wsl.sh
-end
-
-# export USERWINDOWS=(powershell.exe '$env:UserName')
-
-if test $isWSL
+# Windows/WSL
+set is_wsl "$(test -f /proc/version && grep microsoft /proc/version)"
+if test is_wsl
     abbr winget "winget.exe"
     abbr w "cd /mnt/c/Users/samue/"
 end
@@ -31,6 +23,20 @@ if type -q lsd
     end
 end
 
+if type -q starship
+    starship init fish | source
+end
+
+if type -q direnv
+    direnv hook fish | source
+end
+
+# Leaving this function empty, silences the default greeting
+function fish_greeting
+end
+
+# ----- CLI specific variables
+
 # Rust
 fish_add_path $HOME/.cargo/bin
 # . "$HOME/.cargo/env"
@@ -41,34 +47,11 @@ set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
 # Volta
-
-# Add homebrew to path
-# eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
-# ---------- Fish Shell configuration ----------
-
-function fish_greeting
-  # This function empty silences the default message
-  # macchina
-end
-
-# ---- Starship ----
-
-if type -q starship
-    starship init fish | source
-end
-
-
-# direnv
-if type -q direnv
-    direnv hook fish | source
-end
-
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # Golang
-# Update go e.g. https://tecadmin.net/how-to-install-go-on-ubuntu-20-04/
+# To update go e.g. https://tecadmin.net/how-to-install-go-on-ubuntu-20-04/
 set -gx GOPATH "$HOME/go"
 set -gx PATH "$GOPATH/bin" $PATH
 
@@ -85,3 +68,6 @@ set -gx PATH "$GOPATH/bin" $PATH
 
 # Ocaml opam configuration
 # source /home/szanca/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

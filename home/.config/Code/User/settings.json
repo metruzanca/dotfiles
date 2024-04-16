@@ -2,7 +2,7 @@
     // Theming
     "workbench.colorTheme": "Catppuccin Macchiato Bordered",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "'Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Liga Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
     "editor.fontSize": 13,
     // Editor Settings
@@ -22,11 +22,9 @@
             "iconColour": "#f24444"
         },
     },
-
     // Disable stupid features
     "security.workspace.trust.enabled": false, // Annoying trust feature
     "editor.suggest.showWords": false, // Disables [abc] suggestions
-    
     /** 
      * Language Settings 
      */
@@ -40,13 +38,11 @@
     "editor.suggest.showKeywords": false, // Python will show keywords in suggestions, for some reason.
     "python.analysis.typeCheckingMode": "off", // Sometimes this is useful
     "python.defaultInterpreterPath": "./.venv/bin/python", // At work we use .venv folders for python
-
     // JS/TS
     "javascript.validate.enable": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
-
     /** 
      * Extension Settings 
      */
@@ -82,7 +78,6 @@
     "editor.minimap.autohide": true,
     "editor.mouseWheelScrollSensitivity": 0.2,
     "terminal.integrated.defaultProfile.osx": "fish",
-    "bookmarks.saveBookmarksInProject": true,
     "bookmarks.sideBar.countBadge": "off",
     "bookmarks.keepBookmarksOnLineDelete": true,
     "bookmarks.useWorkaroundForFormatters": true,
@@ -93,4 +88,9 @@
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
     "console-ninja.featureSet": "Community",
+    "git.openRepositoryInParentFolders": "always",
+    "vim.smartRelativeLine": true,
+    "editor.fontLigatures": true,
+    "eslint.run": "onSave",
+    "bookmarks.saveBookmarksInProject": true,
 }
