@@ -93,4 +93,6 @@
     "editor.fontLigatures": true,
     "eslint.run": "onSave",
     "bookmarks.saveBookmarksInProject": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
 }

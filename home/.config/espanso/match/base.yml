@@ -16,11 +16,6 @@ matches:
           # 2022-12-04T21:45:31.049Z
           format: "%Y-%m-%dT%H:%M:%S%.3fZ"
 
-  - trigger: ":cal"
-    replace: "https://cal.com/samzanca/15min"
-  - trigger: ":cal"
-    replace: "https://cal.com/samzanca/30min"
-
   - trigger: ":meta"
     replace: |
       - trigger: ":trigger"
@@ -30,3 +25,6 @@ matches:
     replace: "https://www.linkedin.com/in/samuele-zanca/"
   - trigger: ":links"
     replace: "https://github.com/metruzanca/"
+
+  - trigger: ":jira"
+    replace: "https://chainalysis.atlassian.net/browse/"
