@@ -1,7 +1,7 @@
 {
     // Theming
-    "workbench.colorTheme": "Catppuccin Macchiato Bordered",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dolch",
+    "workbench.iconTheme": "verdandi",
     "editor.fontFamily": "'Liga Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
     "editor.fontSize": 13,
@@ -11,12 +11,11 @@
     "git.autofetch": true,
     "editor.stickyScroll.enabled": true,
     "explorer.confirmDelete": false,
-    "editor.guides.bracketPairs": "active",
     "terminal.integrated.env.osx": {},
     "editor.inlineSuggest.enabled": true,
     "todo-tree.highlights.customHighlight": {
         "FIXME": {
-            "foreground": "black",
+            "foreground": "#000",
             "background": "#f24444",
             "gutterIcon": true,
             "iconColour": "#f24444"
@@ -92,7 +91,17 @@
     "vim.smartRelativeLine": true,
     "editor.fontLigatures": true,
     "eslint.run": "onSave",
-    "bookmarks.saveBookmarksInProject": true,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairs": true,
+    "editor.lightbulb.enabled": "off",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.tabs.enabled": false,
+    "workbench.activityBar.location": "top",
+    "autoHide.autoHidePanel": false,
+    // Hides Breakpoint gutter
+    "editor.glyphMargin": false,
+    "breadcrumbs.symbolPath": "off",
 }
