@@ -1,11 +1,9 @@
 {
-    // Theming
     "workbench.colorTheme": "Dolch",
-    "workbench.iconTheme": "verdandi",
+    "workbench.iconTheme": "dolch",
     "editor.fontFamily": "'Liga Comic Mono', 'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
     "editor.fontSize": 13,
-    // Editor Settings
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -14,61 +12,21 @@
     "terminal.integrated.env.osx": {},
     "editor.inlineSuggest.enabled": true,
     "todo-tree.highlights.customHighlight": {
-        "FIXME": {
-            "foreground": "#000",
-            "background": "#f24444",
-            "gutterIcon": true,
-            "iconColour": "#f24444"
-        },
+      "FIXME": {
+        "foreground": "#000",
+        "background": "#f24444",
+        "gutterIcon": true,
+        "iconColour": "#f24444"
+      }
     },
     // Disable stupid features
     "security.workspace.trust.enabled": false, // Annoying trust feature
     "editor.suggest.showWords": false, // Disables [abc] suggestions
-    /** 
-     * Language Settings 
-     */
-    // Python
-    "[python]": {
-        "editor.formatOnType": true,
-    },
-    "python.terminal.activateEnvironment": false, // Disables auto-activation of venv
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.importFormat": "relative",
-    "editor.suggest.showKeywords": false, // Python will show keywords in suggestions, for some reason.
-    "python.analysis.typeCheckingMode": "off", // Sometimes this is useful
-    "python.defaultInterpreterPath": "./.venv/bin/python", // At work we use .venv folders for python
-    // JS/TS
+    "editor.suggest.showKeywords": false, // Disabled keyword suggestions
     "javascript.validate.enable": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
-    /** 
-     * Extension Settings 
-     */
-    // Enables shellcheck for zsh files
-    "shellcheck.ignorePatterns": {
-        "**/*.zsh": false,
-        "**/*.zshrc": false,
-        "**/zshrc": false,
-        "**/*.env*": true
-    },
-    "cSpell.userWords": [
-        "Bento",
-        "BENTOBOX",
-        "emailblast",
-        "navs",
-        "noice",
-        "SENSEI",
-        "shellcheck",
-        "testid",
-        "Unlayer",
-        "upserting"
-    ],
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
+      "source.fixAll.eslint": "explicit"
+      
     },
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -77,22 +35,13 @@
     "editor.minimap.autohide": true,
     "editor.mouseWheelScrollSensitivity": 0.2,
     "terminal.integrated.defaultProfile.osx": "fish",
-    "bookmarks.sideBar.countBadge": "off",
-    "bookmarks.keepBookmarksOnLineDelete": true,
-    "bookmarks.useWorkaroundForFormatters": true,
     "autoHide.autoHideReferences": false,
-    "editor.rulers": [
-        80,
-        120
-    ],
+    "editor.rulers": [80, 120],
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "console-ninja.featureSet": "Community",
     "git.openRepositoryInParentFolders": "always",
-    "vim.smartRelativeLine": true,
     "editor.fontLigatures": true,
     "eslint.run": "onSave",
     "diffEditor.ignoreTrimWhitespace": true,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "editor.bracketPairColorization.enabled": false,
     "editor.guides.bracketPairs": true,
     "editor.lightbulb.enabled": "off",
@@ -101,7 +50,35 @@
     "terminal.integrated.tabs.enabled": false,
     "workbench.activityBar.location": "top",
     "autoHide.autoHidePanel": false,
-    // Hides Breakpoint gutter
-    "editor.glyphMargin": false,
+    "editor.glyphMargin": false, // Hides Breakpoint gutter
     "breadcrumbs.symbolPath": "off",
-}
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "todo-tree.general.tags": [
+      "BUG",
+      "HACK",
+      "FIXME",
+      "TODO(samuele.zanca)",
+      "XXX",
+      "[ ]",
+      "[x]"
+    ],
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "*.ts":"${basename}.*test.${extname}",
+      "*.tsx":"${basename}.*test.${extname}",
+      "tsconfig.json": "tsconfig.*.json",
+      "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, .npmrc, .npmrc.template, .nvmrc, .tool-versions",
+      ".env": ".env*",
+      ".prettierrc": ".prettierignore",
+    },
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.confirmSaveUntitledWorkspace": false
+  }
+  

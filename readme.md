@@ -8,7 +8,7 @@ Unfortunately, not POSIX compliant. Maybe will be in the future. Both Fish and Z
 
 ## Usage
 1. Clone
-2. Run `link.sh`: which will symlink all files in `home/` to the `$HOME` directory.
+2. Run `link.sh`: which will symlink all files in `home/` to the `$HOME`.
 
 If adding a new file or pulling changes, re-run `link.sh`.
 

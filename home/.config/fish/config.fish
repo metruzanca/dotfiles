@@ -1,4 +1,6 @@
 export EDITOR="nvim"
+abbr code "code-insiders"
+export WORK="$HOME/dev/chainalysis/"
 
 # Windows/WSL
 set is_wsl "$(test -f /proc/version && grep microsoft /proc/version)"
@@ -73,3 +75,7 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 zoxide init fish | source
+abbr xk "~/Downloads/xk6-ts_v0.2.6_darwin_amd64/k6"
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+

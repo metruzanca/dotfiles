@@ -29,4 +29,17 @@ matches:
   - trigger: ":jira"
     replace: "https://chainalysis.atlassian.net/browse/"
   - trigger: ":todo"
-    replace: "TODO(samuele.zanca): "
+    replace: "TODO(samuele.zanca):"
+    # Work Email
+  - trigger: ":email"
+    replace: "samuele.zanca@chainalysis.com"
+  - trigger: ":details"
+    replace: |
+      <details>
+      <summary></summary>
+
+      </details>
+  - trigger: ":senior"
+    replace: "señor"
+  - trigger: ":Senior"
+    replace: "Señor"
