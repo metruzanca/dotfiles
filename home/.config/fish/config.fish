@@ -79,3 +79,10 @@ abbr xk "~/Downloads/xk6-ts_v0.2.6_darwin_amd64/k6"
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
+
+# Generated for envman. Do not edit.
+test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
+
+# code insiders
+# /usr/local/bin/code-insiders
+set -gx PATH "/usr/local/bin" $PATH

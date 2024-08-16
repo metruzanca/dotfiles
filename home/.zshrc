@@ -76,3 +76,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # bun completions
 try_source "$HOME.bun/_bun"
 PATH=~/.console-ninja/.bin:$PATH
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

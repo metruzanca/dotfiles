@@ -43,3 +43,5 @@ matches:
     replace: "señor"
   - trigger: ":Senior"
     replace: "Señor"
+  - trigger: ":icon"
+    replace: "https://www.notion.so/images/external_integrations/jira-icon.png"
