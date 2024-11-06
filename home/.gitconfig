@@ -11,6 +11,7 @@
   # Oh stage is a git command... I guess I'll use this instead
   rename = branch -m --
   undo = reset HEAD~1 --mixed
+  new = "!f() { git checkout -b "$1" $(git master); }; f"
   co = checkout
   # Quick commit everything
   qc = "!f() { git add -A && git commit -m \"$@\"; }; f"
