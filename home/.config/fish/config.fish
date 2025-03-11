@@ -86,3 +86,8 @@ test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 # code insiders
 # /usr/local/bin/code-insiders
 set -gx PATH "/usr/local/bin" $PATH
+abbr wt "git worktree"
+
+alias c="open $1 -a \"Cursor\""
+# alias v="open $1 -a \"Visual Studio Code\""
+alias v="open $1 -a \"Visual - Insiders\""

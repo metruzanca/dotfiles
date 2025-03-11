@@ -18,5 +18,6 @@
   # Quickly no-verify commit staged changes
   qcn = "!f() { git commit --no-verify -m \"$@\"; }; f"
   publish = !sh -c \"git push --set-upstream origin $(git branch --show-current)\"
+  wt = worktree
 [core]
   excludesfile = ~/.gitignore

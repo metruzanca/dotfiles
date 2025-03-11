@@ -30,4 +30,10 @@ matches:
     replace: "![mind blowing](https://media.tenor.com/3eIvVsG3yPYAAAAd/the-universe-tim-and-eric-mind-blown.gif)"
   - trigger: ":css"
     replace: "![family guy css](https://tenor.com/YzGw.gif)"
+  - trigger: ":parrotwave"
+    replace: ":parrotwave1::parrotwave2::parrotwave3::parrotwave4::parrotwave5::parrotwave6::parrotwave7::parrotwave8::parrotwave9:"
+  - trigger: ":pingaaa"
+    replace: "https://media.tenor.com/OLtFOaBgVSYAAAAj/ping-aaaaaaa.gif"
+
+
     
