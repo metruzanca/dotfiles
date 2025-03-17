@@ -1,5 +1,5 @@
 export EDITOR="nvim"
-abbr code "code-insiders"
+#abbr code "code-insiders"
 export WORK="$HOME/dev/chainalysis/"
 
 # Windows/WSL
@@ -90,4 +90,4 @@ abbr wt "git worktree"
 
 alias c="open $1 -a \"Cursor\""
 # alias v="open $1 -a \"Visual Studio Code\""
-alias v="open $1 -a \"Visual - Insiders\""
+alias v="open $1 -a \"visual Studio Code - Insiders\""

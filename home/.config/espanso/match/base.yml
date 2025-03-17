@@ -45,3 +45,10 @@ matches:
     replace: "Señor"
   - trigger: ":icon"
     replace: "https://www.notion.so/images/external_integrations/jira-icon.png"
+  - trigger: ":time"
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%I%M%p"
+    replace: "https://time.is/{{time}}_in_Jersey_City"
