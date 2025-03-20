@@ -91,3 +91,6 @@ abbr wt "git worktree"
 alias c="open $1 -a \"Cursor\""
 # alias v="open $1 -a \"Visual Studio Code\""
 alias v="open $1 -a \"visual Studio Code - Insiders\""
+
+# UUtils (rust rewrite of coreutils)
+fish_add_path "/opt/homebrew/opt/uutils-coreutils/libexec/uubin"
