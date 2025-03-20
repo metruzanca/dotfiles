@@ -3,6 +3,7 @@
 
 add_newline = false
 command_timeout = 1000
+format = "$time$all"
 
 [line_break]
 disabled = true
@@ -10,3 +11,10 @@ disabled = true
 [git_status]
 # I don't like seeing stashes since it makes worry that I forgot to commit something
 stashed = ''
+
+[time]
+disabled = false
+style = ""
+# https://docs.rs/chrono/0.4.7/chrono/format/strftime/index.html
+time_format = "%R"
+format = "[$time]($style) "

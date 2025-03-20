@@ -1,6 +1,6 @@
 # ---------- Variables ----------
 export nvm_default_version="v16.18.1"
-export EDITOR="code-insiders"
+export EDITOR="nvim"
 export C="/mnt/c"
 
 # source $HOME/.config/fish/env.fish
@@ -23,7 +23,6 @@ abbr w "cd /mnt/c/Users/samue/"
 
 # Projects
 abbr dot "$EDITOR ~/dev/dotfiles"
-abbr z "$EDITOR /mnt/c/Users/samue/Documents/zanca.dev-quartz"
 
 if test $isWSL
     abbr winget "winget.exe"
@@ -105,5 +104,20 @@ set -gx PATH "$FLYCTL_INSTALL/bin" $PATH
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-# opam configuration
-source /home/szanca/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
+# # Generated for envman. Do not edit.
+test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
+
+
+# Gleam
+abbr gm "gleam run -m"
+
+# zoxide
+if type -q zoxide
+  zoxide init fish | source
+end
+
+
+# WSL
+function ps
+  powershell.exe -Command "$argv"
+end
