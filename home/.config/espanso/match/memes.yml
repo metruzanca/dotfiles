@@ -19,6 +19,8 @@ matches:
   - trigger: ":lgtm"
     replace: "![lgtm-crazy-eyes](https://media.tenor.com/hu2TLH3O3moAAAAj/thumbs-up-dj-hunts.gif)"
   - trigger: ":lgtm"
+    replace: "![lgtm-knuckles](https://c.tenor.com/wbbVpsYxvMoAAAAC/tenor.gif)"
+  - trigger: ":lgtm"
     replace: "![lgtm-trump](https://c.tenor.com/VuTuwTqOpokAAAAd/tenor.gif)"
   - trigger: ":headdesk"
     replace: "![headdesk](https://media.tenor.com/VXXnQAaO7PwAAAAC/head-desk-head-bang.gif)"
