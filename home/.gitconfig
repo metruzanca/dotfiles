@@ -6,9 +6,6 @@
 [alias]
   # This is a utility for other custom aliases
   master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
-  # Delete local version and re-checkout branch from remote
-  fresh = "!~/.config/git/fresh.sh"
-  # Oh stage is a git command... I guess I'll use this instead
   rename = branch -m --
   undo = reset HEAD~1 --mixed
   co = checkout
