@@ -3,7 +3,7 @@ set -gx EDITOR hx
 
 if set -q ZELLIJ
 else
-    zellij
+    zellij attach main || zellij --session main || zellij
 end
 
 if type -q starship
@@ -28,11 +28,15 @@ if status is-interactive
 end
 
 function fish_greeting
-  pfetch
+    pfetch
 end
 
 if type -q lsd
     abbr ls lsd
+end
+
+if type -q zoxide
+    abbr cd z
 end
 
 # Auto run ls when cd-ing around
@@ -49,3 +53,14 @@ if type -q lsd
         set -g __autols_last (pwd)
     end
 end
+
+abbr zj "zellij attach main || zellij --session main || zellij"
+
+# ---------- Auto appended scripts ----------
+
+# pnpm
+set -gx PNPM_HOME "/home/metru/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
