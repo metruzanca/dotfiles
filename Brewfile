@@ -5,8 +5,9 @@ brew "lsd"
 brew "pfetch"
 brew "htop"
 brew "stow"
+brew "zoxide"
 
-# Install Apps
+# Install Terminal Apps
 brew "gh"
 brew "evil-helix"
 brew "tree"
@@ -22,10 +23,9 @@ brew "volta"
 # Install Cask Apps
 cask "alacritty"
 cask "visual-studio-code"
-#cask "obsidian"
 cask "alt-tab"
 cask "rectangle"
-#cask "docker"
+cask "slack"
 
 # Extra
 cask "discord"
