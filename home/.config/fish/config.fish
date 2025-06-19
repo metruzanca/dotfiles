@@ -1,4 +1,10 @@
 # ---------- Initializations ----------
+
+# Required on macos as a first step
+if test -f /opt/homebrew/bin/brew
+    eval (/opt/homebrew/bin/brew shellenv)
+end
+
 set -gx EDITOR hx
 
 if type -q zellij
@@ -7,7 +13,6 @@ if type -q zellij
         zellij attach main || zellij --session main || zellij
     end
 end
-
 
 if type -q starship
     starship init fish | source
@@ -69,8 +74,3 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
-
-if test -f /opt/homebrew/bin/brew
-    eval (/opt/homebrew/bin/brew shellenv)
-end
-
