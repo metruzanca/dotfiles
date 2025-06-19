@@ -1,3 +1,6 @@
+# ---------- Utilities ----------
+set -l os (uname)
+set -l username (whoami)
 # ---------- Initializations ----------
 
 # Required on macos as a first step
@@ -26,8 +29,17 @@ if type -q direnv
     direnv hook fish | source
 end
 
-# Rust
-#fish_add_path $HOME/.cargo/bin
+# ---------- Tool configuration ----------
+
+# Macos needs this added to PATH
+if test $os = "Darwin" && type -q volta
+    fish_add_path "/Users/$username/.volta/bin"
+end
+
+set -gx PNPM_HOME "/home/$username/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    fish_add_path "$PNPM_HOME"
+end
 
 # ---------- Fish Shell configuration ----------
 
@@ -67,10 +79,3 @@ end
 abbr zj "zellij attach main || zellij --session main || zellij"
 
 # ---------- Auto appended scripts ----------
-
-# pnpm
-set -gx PNPM_HOME "/home/metru/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
