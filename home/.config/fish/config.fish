@@ -31,7 +31,9 @@ if status is-interactive
 end
 
 function fish_greeting
-    pfetch
+    if type -q pfetch
+        pfetch
+    end
 end
 
 if type -q lsd
@@ -67,3 +69,8 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+if test -f /opt/homebrew/bin/brew
+    eval (/opt/homebrew/bin/brew shellenv)
+end
+
