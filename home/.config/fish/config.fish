@@ -1,10 +1,13 @@
 # ---------- Initializations ----------
 set -gx EDITOR hx
 
-if set -q ZELLIJ
-else
-    zellij attach main || zellij --session main || zellij
+if type -q zellij
+    if set -q ZELLIJ
+    else
+        zellij attach main || zellij --session main || zellij
+    end
 end
+
 
 if type -q starship
     starship init fish | source
