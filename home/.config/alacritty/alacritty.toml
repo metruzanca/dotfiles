@@ -2,3 +2,12 @@
 opacity = 0.85
 decorations = "None"
 startup_mode = "Maximized"
+
+[font]
+size = 16.0
+normal = { family = "FiraCode Nerd Font" }
+
+[general]
+import = [
+  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
+]
