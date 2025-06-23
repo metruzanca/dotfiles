@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "shift+cmd+s",
+        "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "-workbench.action.files.saveAs"
+    }
+]
