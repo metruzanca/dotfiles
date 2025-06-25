@@ -18,4 +18,5 @@
     "workbench.iconTheme": "bearded-icons",
     "workbench.layoutControl.enabled": false,
     "zenMode.fullScreen": false,
+    "editor.rulers": [120]
 }

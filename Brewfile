@@ -35,6 +35,7 @@ cask "kap"
 cask "spotify"
 cask "notion"
 cask "linear-linear"
+cask "beekeeper-studio"
 
 ## Development Tools
 brew "volta" # Node version manager
