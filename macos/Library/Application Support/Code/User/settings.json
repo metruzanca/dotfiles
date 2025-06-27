@@ -18,5 +18,11 @@
     "workbench.iconTheme": "bearded-icons",
     "workbench.layoutControl.enabled": false,
     "zenMode.fullScreen": false,
-    "editor.rulers": [120]
+    "editor.rulers": [
+        120
+    ],
+    "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }

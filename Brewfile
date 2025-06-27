@@ -36,9 +36,11 @@ cask "spotify"
 cask "notion"
 cask "linear-linear"
 cask "beekeeper-studio"
+cask "tunnelblick" # OpenVPN client
 
 ## Development Tools
 brew "volta" # Node version manager
+brew "awscli"
 
 # Non-Work Apps
 cask "discord"
