@@ -18,3 +18,8 @@ style = ""
 # https://docs.rs/chrono/0.4.7/chrono/format/strftime/index.html
 time_format = "%R"
 format = "[$time]($style) "
+
+[aws]
+# Show little cloud icon if AWS_PROFILE is set
+disabled = false
+format = "[$symbol]($style)"
