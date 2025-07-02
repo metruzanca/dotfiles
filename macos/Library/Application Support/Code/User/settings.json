@@ -14,15 +14,23 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "window.commandCenter": false,
     "workbench.activityBar.location": "top",
-    "workbench.colorTheme": "Dolch",
+    "workbench.colorTheme": "Verdandi Alter",
     "workbench.iconTheme": "bearded-icons",
     "workbench.layoutControl.enabled": false,
     "zenMode.fullScreen": false,
-    "editor.rulers": [
-        120
-    ],
+    "editor.rulers": [120],
     "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "debug.showBreakpointsInOverviewRuler": false,
+    "editor.glyphMargin": false,
+    "githubPullRequests.pushBranch": "always",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.external.osxExec": "fish",
+    "githubPullRequests.terminalLinksHandler": "github",
+    "editor.wordWrap": "on",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.suggest.showWords": false,
 }
