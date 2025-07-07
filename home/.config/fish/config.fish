@@ -8,6 +8,11 @@ if test -f /opt/homebrew/bin/brew
     eval (/opt/homebrew/bin/brew shellenv)
 end
 
+# Required on if using Linuxbrew
+if test -f /home/linuxbrew/.linuxbrew/bin/brew
+  eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
+
 set -gx EDITOR hx
 
 if type -q zellij
