@@ -33,4 +33,5 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "editor.linkedEditing": true,
     "editor.suggest.showWords": false,
+    "playwright.reuseBrowser": false,
 }

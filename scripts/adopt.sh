@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "$1" ]; then
+  echo "This script moves a file or directory to the dotfiles repository and stows it."
   echo "Usage: $0 <path>"
   exit 1
 fi
