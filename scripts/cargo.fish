@@ -1,4 +1,8 @@
 #!/usr/bin/env fish
+
+# The purpose of this script is to both save a list of all cargo extensions I use
+# and to automate the installation of these extensions.
+
 # ---------- Script Code ----------
 
 if not type -q cargo; or not type -q gum
