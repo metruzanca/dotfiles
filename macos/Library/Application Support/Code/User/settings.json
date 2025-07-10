@@ -34,4 +34,8 @@
     "editor.linkedEditing": true,
     "editor.suggest.showWords": false,
     "playwright.reuseBrowser": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
 }
