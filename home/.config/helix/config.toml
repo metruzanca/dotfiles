@@ -7,6 +7,9 @@ idle-timeout = 0
 [editor.file-picker]
 hidden = false
 
+[editor.soft-wrap]
+enable = true
+
 # Disable arrow keys in normal mode to force me to build muscle memory
 [keys.normal]
 up = "no_op"
