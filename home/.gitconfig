@@ -15,4 +15,4 @@
   qcn = "!f() { git commit --no-verify -m \"$@\"; }; f"
   publish = !sh -c \"git push --set-upstream origin $(git branch --show-current)\"
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore_global

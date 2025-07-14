@@ -6,3 +6,6 @@
 node_modules
 .env
 .envrc
+
+# Vscode (mainly for work repos)
+.vscode/settings.json
