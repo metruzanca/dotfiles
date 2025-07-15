@@ -5,6 +5,7 @@ brew "lsd"
 brew "pfetch"
 brew "stow"
 brew "zoxide"
+brew "direnv"
 
 # Install Terminal Apps
 brew "htop"
