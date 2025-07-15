@@ -6,12 +6,10 @@ if type -q zoxide
             return 1
         end
 
-        set -l zoxide_arg (echo $argv[1])
-
         if test (uname) = "Darwin"
-        	zoxide query "$zoxide_arg" | xargs open -a "Visual Studio Code"
+            zoxide query "$argv[1]" | xargs open -a "Visual Studio Code"
         else
-            zoxide query $zoxide_arg | xargs code
+            zoxide query "$argv[1]" | xargs code
         end
     end
 end
