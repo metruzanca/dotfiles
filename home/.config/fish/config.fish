@@ -1,7 +1,7 @@
 # ---------- Utilities ----------
 set -l os (uname)
 set -l username (whoami)
-# ---------- Initializations ----------
+# ---------- Fish Shell configuration ----------
 
 # Required on macos as a first step
 if test -f /opt/homebrew/bin/brew
@@ -34,8 +34,6 @@ if type -q direnv
     direnv hook fish | source
 end
 
-# ---------- Fish Shell configuration ----------
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -47,14 +45,6 @@ function fish_greeting
         end
         pfetch
     end
-end
-
-if type -q lsd
-    abbr ls lsd
-end
-
-if type -q zoxide
-    abbr cd z
 end
 
 # Auto run ls when cd-ing around
@@ -72,6 +62,7 @@ if type -q lsd
     end
 end
 
-abbr zj "zellij attach main || zellij --session main || zellij"
+# TODO use rust uutils-coreutils instead of GNU coreutils
+# fish_add_path "/opt/homebrew/opt/uutils-coreutils/libexec/uubin"
 
 # ---------- Auto appended scripts ----------

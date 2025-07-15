@@ -40,5 +40,14 @@
   "editor.formatOnSave": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts":"${basename}.*test.${extname}",
+    "*.tsx":"${basename}.*test.${extname}",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, .npmrc, .npmrc.template, .nvmrc, .tool-versions",
+    ".env": ".env*",
+    ".prettierrc": ".prettierignore",
+  },
 }
