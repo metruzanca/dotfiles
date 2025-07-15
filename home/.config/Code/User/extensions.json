@@ -1,0 +1,78 @@
+[
+  {
+    "id": "be5invis.theme-dolch",
+    "url": "https://marketplace.visualstudio.com/items?itemName=be5invis.theme-dolch"
+  },
+  {
+    "id": "be5invis.theme-verdandi",
+    "url": "https://marketplace.visualstudio.com/items?itemName=be5invis.theme-verdandi"
+  },
+  {
+    "id": "beardedbear.beardedicons",
+    "url": "https://marketplace.visualstudio.com/items?itemName=beardedbear.beardedicons"
+  },
+  {
+    "id": "bradlc.vscode-tailwindcss",
+    "url": "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+  },
+  {
+    "id": "catppuccin.catppuccin-vsc",
+    "url": "https://marketplace.visualstudio.com/items?itemName=catppuccin.catppuccin-vsc"
+  },
+  {
+    "id": "dbaeumer.vscode-eslint",
+    "url": "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint"
+  },
+  {
+    "id": "dsznajder.es7-react-js-snippets",
+    "url": "https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets"
+  },
+  {
+    "id": "eamodio.gitlens",
+    "url": "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
+  },
+  {
+    "id": "esbenp.prettier-vscode",
+    "url": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+  },
+  {
+    "id": "github.copilot",
+    "url": "https://marketplace.visualstudio.com/items?itemName=github.copilot"
+  },
+  {
+    "id": "github.copilot-chat",
+    "url": "https://marketplace.visualstudio.com/items?itemName=github.copilot-chat"
+  },
+  {
+    "id": "github.vscode-pull-request-github",
+    "url": "https://marketplace.visualstudio.com/items?itemName=github.vscode-pull-request-github"
+  },
+  {
+    "id": "johnpapa.vscode-peacock",
+    "url": "https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock"
+  },
+  {
+    "id": "mhutchie.git-graph",
+    "url": "https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph"
+  },
+  {
+    "id": "ms-playwright.playwright",
+    "url": "https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright"
+  },
+  {
+    "id": "sirmspencer.vscode-autohide",
+    "url": "https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide"
+  },
+  {
+    "id": "tamasfe.even-better-toml",
+    "url": "https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml"
+  },
+  {
+    "id": "ue.alphabetical-sorter",
+    "url": "https://marketplace.visualstudio.com/items?itemName=ue.alphabetical-sorter"
+  },
+  {
+    "id": "wakatime.vscode-wakatime",
+    "url": "https://marketplace.visualstudio.com/items?itemName=wakatime.vscode-wakatime"
+  }
+]
