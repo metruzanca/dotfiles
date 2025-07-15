@@ -34,6 +34,18 @@ if type -q direnv
     direnv hook fish | source
 end
 
+if type -q lsd
+    abbr ls lsd
+end
+
+if type -q zoxide
+    abbr cd z
+end
+
+if type -q zellij
+    abbr zj "zellij attach main || zellij --session main || zellij"
+end
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
