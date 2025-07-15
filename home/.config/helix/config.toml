@@ -4,6 +4,8 @@ true-color = true
 # See https://twitter.com/swlkr/status/1651284505968115714
 idle-timeout = 0
 auto-format = true
+gutters = ["line-numbers", "spacer", "diff"]
+
 
 [editor.file-picker]
 hidden = false
