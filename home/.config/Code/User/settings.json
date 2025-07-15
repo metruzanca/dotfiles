@@ -1,0 +1,54 @@
+{
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.minimap.autohide": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.startupPrompt": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.layoutControl.enabled": false,
+  "zenMode.fullScreen": false,
+  "editor.rulers": [120],
+  "editor.fontFamily": "'FiraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.showBreakpointsInOverviewRuler": false,
+  "editor.glyphMargin": false,
+  "githubPullRequests.pushBranch": "always",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.external.osxExec": "fish",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "editor.wordWrap": "on",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.suggest.showWords": false,
+  "playwright.reuseBrowser": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts":"${basename}.*test.${extname}",
+    "*.tsx":"${basename}.*test.${extname}",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, .npmrc, .npmrc.template, .nvmrc, .tool-versions",
+    ".env": ".env*",
+    ".prettierrc": ".prettierignore",
+  },
+}
