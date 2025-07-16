@@ -13,6 +13,9 @@ if test -f /home/linuxbrew/.linuxbrew/bin/brew
   eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
 
+# Use Rust-based coreutils instead of GNU coreutils
+fish_add_path /opt/homebrew/opt/uutils-coreutils/libexec/uubin
+
 set -gx EDITOR hx
 
 if type -q zellij
