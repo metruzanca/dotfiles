@@ -48,6 +48,10 @@
     "url": "https://marketplace.visualstudio.com/items?itemName=github.vscode-pull-request-github"
   },
   {
+    "id": "herrmannplatz.npm-dependency-links",
+    "url": "https://marketplace.visualstudio.com/items?itemName=herrmannplatz.npm-dependency-links"
+  },
+  {
     "id": "johnpapa.vscode-peacock",
     "url": "https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock"
   },

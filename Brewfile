@@ -38,6 +38,7 @@ cask "notion"
 cask "linear-linear"
 cask "beekeeper-studio"
 cask "tunnelblick" # OpenVPN client
+cask "bruno"
 
 ## Development Tools
 brew "volta" # Node version manager
