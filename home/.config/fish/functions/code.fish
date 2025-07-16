@@ -6,11 +6,17 @@ if type -q zoxide
             return 1
         end
 
+        set -l cmd "code"
         if test (uname) = "Darwin"
-            zoxide query "$argv[1]" | xargs open -a "Visual Studio Code"
-        else
-            zoxide query "$argv[1]" | xargs code
+            set -l cmd 'open -a "Visual Studio Code"'
         end
+
+        if test "$argv[1]" = "."
+            pwd | xargs "$cmd"
+            return 0
+        end
+
+        zoxide query "$argv[1]" | xargs "$cmd"
     end
 end
 
