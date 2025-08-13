@@ -81,3 +81,5 @@ end
 # fish_add_path "/opt/homebrew/opt/uutils-coreutils/libexec/uubin"
 
 # ---------- Auto appended scripts ----------
+
+fish_add_path -a /Users/metru/.foundry/bin
