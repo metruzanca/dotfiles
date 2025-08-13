@@ -51,4 +51,9 @@
     ".env": ".env*",
     ".prettierrc": ".prettierignore",
   },
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "terminal.integrated.tabs.location": "left",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
