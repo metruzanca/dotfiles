@@ -57,7 +57,3 @@ function fish_greeting
         pfetch
     end
 end
-
-# ---------- Auto appended scripts ----------
-
-fish_add_path -a /Users/metru/.foundry/bin
