@@ -7,5 +7,9 @@
     {
         "key": "shift+cmd+s",
         "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "cmd+e",
+        "command": "composerMode.background"
     }
 ]

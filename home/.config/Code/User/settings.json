@@ -3,7 +3,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "git.autofetch": true,
@@ -44,16 +44,16 @@
   },
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "*.ts":"${basename}.*test.${extname}",
-    "*.tsx":"${basename}.*test.${extname}",
+    "*.ts": "${basename}.*test.${extname}",
+    "*.tsx": "${basename}.*test.${extname}",
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, .npmrc, .npmrc.template, .nvmrc, .tool-versions",
     ".env": ".env*",
-    ".prettierrc": ".prettierignore",
+    ".prettierrc": ".prettierignore"
   },
   "typescript.tsserver.maxTsServerMemory": 4096,
   "terminal.integrated.tabs.location": "left",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
 }
