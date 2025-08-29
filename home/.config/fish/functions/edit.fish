@@ -6,6 +6,17 @@ if type -q zoxide
             return 1
         end
 
-        zoxide query "$argv[1]" | xargs $EDITOR
+        set -l cmd "$EDITOR"
+        # This trick opens vscode much faster on macOS
+        if test "$EDITOR" = "code"; and test (uname) = "Darwin"
+            set -l cmd 'open -a "Visual Studio Code"'
+        end
+
+        if test "$argv[1]" = "."
+            pwd | xargs "$cmd"
+            return 0
+        end
+
+        zoxide query "$argv[1]" | xargs "$cmd"
     end
 end
