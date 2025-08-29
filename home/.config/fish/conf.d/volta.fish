@@ -5,5 +5,5 @@ end
 
 if test -d "$HOME/.volta/bin"
     set -gx VOLTA_HOME "$HOME/.volta"
-    set -gx PATH "$VOLTA_HOME/bin" $PATH
+    fish_add_path "$VOLTA_HOME/bin"
 end

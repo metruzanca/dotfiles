@@ -4,6 +4,3 @@ home/.config/fish/fish_variables
 
 # Fish
 home/.config/fish/config.fish
-
-# Secrets
-home/.config/fish/conf.d/docker-secrets.fish
