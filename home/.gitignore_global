@@ -9,3 +9,6 @@ node_modules
 
 # Vscode (mainly for work repos)
 .vscode/settings.json
+
+# Cursor
+.cursor
