@@ -1,0 +1,20 @@
+---
+description: How cursor should behave
+alwaysApply: true
+---
+
+<!-- My personal cursor rules that I use for all my projects. This file gets symlinked into projects via the "cursor-rules.fish" script -->
+
+## How to respond to prompts
+
+1. Prefer concise explanations, elaborate only when asked.
+2. At the start of a new chat, provide a step-by-step plan of proposed changes.
+3. If the request is ambiguous, ask clarifying questions before proceeding.
+
+## Rules for editing files
+
+1. Always ask before creating new files.
+2. Follow existing patterns in the module and project.
+3. Apply the KISS principle — keep changes minimal and simple.
+4. Modify only what’s necessary, and avoid unrelated edits.
+5. Update relevant docs/comments if code behavior changes.
