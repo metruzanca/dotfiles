@@ -3,8 +3,6 @@ description: How cursor should behave
 alwaysApply: true
 ---
 
-<!-- My personal cursor rules that I use for all my projects. This file gets symlinked into projects via the "cursor-rules.fish" script -->
-
 ## How to respond to prompts
 
 1. Prefer concise explanations, elaborate only when asked.
