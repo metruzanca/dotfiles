@@ -3,7 +3,8 @@ abbr mkdir 'mkdir -p'
 abbr rm 'rm -r'
 
 # Golang
-if type -q tparse
+if type -q go
   ## I keep writing got when going fast so let's make it an abbreviation
-  abbr got "go test ./... -json | tparse -all"
+  abbr got "go test ./... | grep -v '?'"
+  abbr gog "go generate ./..."
 end
