@@ -12,6 +12,6 @@ abbr rm 'rm -r'
 # Golang specific abbreviations
 if type -q go
   ## I keep writing got when going fast so let's make it an abbreviation
-  abbr got "go test ./... | grep -v '?'"
+  abbr got "CI=\"true\" go test -v ./... -json | tparse -all"
   abbr gog "go generate ./..."
 end
