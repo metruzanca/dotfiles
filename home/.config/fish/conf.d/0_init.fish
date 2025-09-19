@@ -10,3 +10,8 @@ if test -f /home/linuxbrew/.linuxbrew/bin/brew
   eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
   fish_add_path /home/linuxbrew/.linuxbrew/opt/uutils-coreutils/libexec/uubin
 end
+
+# ---------- Default Environment Variables ----------
+# This fish file gets loaded first, so we can set default env vars here
+# the $HOME/.config/fish/config.fish file can override these if needed
+set -gx EDITOR code

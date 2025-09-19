@@ -65,5 +65,6 @@
     "head": true,
     "tail": true,
     "go": true
-  }
+  },
+  "extensions.ignoreRecommendations": true
 }

@@ -5,6 +5,9 @@ abbr loc 'git ls-files -z | xargs -0 wc -l 2>/dev/null | awk "END {print \$1}" |
 # Cd to the root of the git repository or stay in the current directory if not in a git repo
 abbr cdg 'cd $(git rev-parse --show-toplevel || echo .)'
 
+
+abbr c '$EDITOR .'
+
 # Default flags for common commands
 abbr mkdir 'mkdir -p'
 abbr rm 'rm -r'
