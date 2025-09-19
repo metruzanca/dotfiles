@@ -11,5 +11,5 @@ if type -q fzf
   end
 
   # Show a fuzzy list of git commits with a preview of the commit diff
-  abbr git-fuzzy 'git log --color --date=format:"%Y-%m-%d" --format="%h - %cd - %s" | fzf --ansi --preview "git show --color {1}"'
+  abbr git-log 'git log --color --date=format:"%Y-%m-%d" --format="%h - %cd - %s" | fzf --ansi --preview "git show --color {1}"'
 end
