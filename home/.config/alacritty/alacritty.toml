@@ -1,5 +1,5 @@
 [window]
-opacity = 0.85
+opacity = 1
 # decorations = "None" # Disabling this on MacOS will prevent the window from having tabs.
 startup_mode = "Maximized"
 
@@ -8,6 +8,4 @@ size = 16.0
 normal = { family = "FiraCode Nerd Font" }
 
 [general]
-import = [
-  "~/.config/alacritty/catppuccin/catppuccin-mocha.toml"
-]
+import = ["~/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
