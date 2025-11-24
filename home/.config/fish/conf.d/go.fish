@@ -1,10 +1,14 @@
-# If Go is installed, setup golang environment
+# Loosely check if Go is installed 
 if test -d $HOME/go/bin
   fish_add_path $HOME/go/bin
 
-  # Install golang apps used in development environemnt if not already installed
+  # Setup golang environment
 
-  set -l golang_apps; # lists are weird in fish, but this makes it easier to read and append items to the list
+  ## Install golang apps used in development environemnt
+  
+  # lists are weird in fish, but this makes it easier to read and append items to the list
+  # I also don't like ending lines in "\"
+  set -l golang_apps;
   set golang_apps $golang_apps github.com/mfridman/tparse@latest
   set golang_apps $golang_apps mvdan.cc/gofumpt@latest
   set golang_apps $golang_apps github.com/sqlc-dev/sqlc/cmd/sqlc@latest
@@ -16,4 +20,7 @@ if test -d $HOME/go/bin
     end
   end
 
+  # Golang abbreviations
+  abbr got "CI=\"true\" go test -v ./... -json | tparse -all"
+  abbr gog "go generate ./..."
 end
