@@ -1,6 +1,5 @@
 # If Go is installed, setup golang environment
-if test -f $HOME/go/bin
-
+if test -d $HOME/go/bin
   fish_add_path $HOME/go/bin
 
   # Install golang apps used in development environemnt if not already installed
