@@ -22,6 +22,13 @@ stow home
 stow macos
 ```
 
+
+```bash
+# Change shell
+which fish | sudo tee -a /etc/shells >/dev/null;
+chsh -s "$(which fish)";
+```
+
 ## File Structure
 
 ```bash
