@@ -1,8 +1,0 @@
----
-description: Writing Golang code
-globs: "**/*.go"
-alwaysApply: false
----
-
-## Writing tests
-- When writing helper methods for tests, always include a `t.Helper()` to create better stack traces.
