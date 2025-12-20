@@ -10,6 +10,6 @@ normal = { family = "FiraCode Nerd Font" }
 [general]
 import = ["~/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
 
-[shell]
+[terminal.shell]
 program = "/opt/homebrew/bin/fish"
 args = ["-l"]
