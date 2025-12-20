@@ -5,9 +5,6 @@ if type -q fzf
     function fzf_find_file
       command fd -t f --hidden --exclude .git . | fzf --preview 'bat --color=always {}'
     end
-
-    # Bind Ctrl+P to the fzf_find_file function
-    bind \cp 'fzf_find_file'
   end
 
   # Show a fuzzy list of git commits with a preview of the commit diff
