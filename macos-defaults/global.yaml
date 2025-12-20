@@ -1,0 +1,12 @@
+---
+description: NSGlobalDomain
+sudo: false
+current_host: false
+data:
+  NSGlobalDomain:
+    # Dark mode
+    AppleInterfaceStyle: Dark
+    # Make F1–F12 standard function keys (Fn for media/brightness)
+    com.apple.keyboard.fnState: true
+    # Disable natural scrolling
+    com.apple.swipescrolldirection: false
