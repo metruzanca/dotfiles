@@ -6,6 +6,7 @@ brew "pfetch"
 brew "stow"
 brew "zoxide"
 brew "direnv"
+brew "gum"
 
 # Install Terminal Apps
 brew "htop"
@@ -20,7 +21,7 @@ cask "font-fira-code-nerd-font"
 cask "font-liga-comic-mono"
 
 # Install Cask Apps
-cask "brave"
+cask "brave-browser"
 cask "alacritty"
 cask "visual-studio-code"
 cask "alt-tab"
@@ -37,8 +38,8 @@ cask "spotify"
 cask "notion"
 cask "linear-linear"
 cask "beekeeper-studio"
-cask "tunnelblick" # OpenVPN client
-cask "bruno"
+# cask "tunnelblick" # OpenVPN client
+# cask "yaak"
 
 ## Development Tools
 brew "volta" # Node version manager
