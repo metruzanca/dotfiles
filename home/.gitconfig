@@ -9,6 +9,8 @@
   rename = branch -m --
   undo = reset HEAD~1 --mixed
   co = checkout
+  # Simplified status (shows branch and dirty status)
+  st = status -sb -uall --renames
   # Quick commit everything
   qc = "!f() { git add -A && git commit -m \"$@\"; }; f"
   # Quickly no-verify commit staged changes
