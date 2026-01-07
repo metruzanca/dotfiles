@@ -1,5 +1,5 @@
 [window]
-opacity = 1
+opacity = 0.85
 # decorations = "None" # Disabling this on MacOS will prevent the window from having tabs.
 startup_mode = "Maximized"
 

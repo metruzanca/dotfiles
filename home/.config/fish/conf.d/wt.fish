@@ -3,5 +3,5 @@
 if type -q wt;
   command wt config shell init fish | source; 
 
-  abbr wtc "wt switch -c -x cursor-agent"
+  abbr wtc "wt switch -c -x cursor-agent metru/"
 end
