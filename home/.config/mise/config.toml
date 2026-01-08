@@ -3,3 +3,6 @@ experimental = true
 trusted_config_paths = [
   "~/code/"
 ]
+
+[tools]
+"npm:kill-port" = "latest"
