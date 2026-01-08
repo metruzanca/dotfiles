@@ -1,6 +1,6 @@
 [user]
-  email = samuele@zanca.dev
-  name = Sam Zanca
+  email = sam@zanca.dev
+	name = Metru
 [init]
   defaultBranch = main
 [alias]
@@ -20,3 +20,7 @@
   attach = checkout -
 [core]
   excludesfile = ~/.gitignore_global
+
+# Change username if on work machine. Work machine has whoami=sentience
+[includeIf "gitdir:/Users/sentience/"]
+  path = ~/.gitconfig-work
