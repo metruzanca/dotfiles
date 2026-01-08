@@ -14,3 +14,4 @@ abbr loc 'git ls-files -z | xargs -0 wc -l 2>/dev/null | awk "END {print \$1}" |
 
 abbr c 'cursor .'
 abbr ca 'cursor-agent'
+abbr car 'cursor-agent --resume'
