@@ -6,7 +6,6 @@
 node_modules
 .env
 .envrc
-mise.toml
 
 # Vscode (mainly for work repos)
 .vscode/settings.json
