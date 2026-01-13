@@ -1,2 +1,3 @@
 [post-create]
+rebase-main = "git pull --rebase origin main"
 mise-install = "mise install"
