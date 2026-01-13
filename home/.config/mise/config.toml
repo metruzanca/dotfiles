@@ -5,4 +5,5 @@ trusted_config_paths = [
 ]
 
 [tools]
+bun = "latest"
 "npm:kill-port" = "latest"
