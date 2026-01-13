@@ -19,4 +19,4 @@ end
 # ---------- Default Environment Variables ----------
 # This fish file gets loaded first, so we can set default env vars here
 # the $HOME/.config/fish/config.fish file can override these if needed
-set -gx EDITOR code
+set -gx EDITOR hx
