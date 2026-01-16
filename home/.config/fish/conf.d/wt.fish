@@ -4,4 +4,6 @@ if type -q wt;
   command wt config shell init fish | source; 
 
   abbr wtc "wt switch -c -x cursor-agent metru/"
+  abbr wts "wt switch"
+  abbr wtr "wt remove"
 end
