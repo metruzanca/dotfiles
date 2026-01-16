@@ -3,7 +3,10 @@
 if type -q wt;
   command wt config shell init fish | source; 
 
-  abbr wtc "wt switch -c -x cursor-agent metru/"
+
+  set -l date (date "+%b-%d")
+
+  abbr -a wtc "wt switch -c -x cursor-agent metru/$date/"
   abbr wts "wt switch"
   abbr wtr "wt remove"
 end
