@@ -33,6 +33,6 @@ if test -d $HOME/go/bin
   end
 
   # Golang abbreviations
-  abbr got "CI=\"true\" go test -v ./... -json | tparse -all"
-  abbr gog "go generate ./..."
+  abbr gotest "CI=\"true\" go test -v ./... -json | tparse -all"
+  abbr gogen "go generate ./..."
 end
