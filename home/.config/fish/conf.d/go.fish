@@ -20,6 +20,8 @@ if test -d $HOME/go/bin
   add_golang_app mvdan.cc/gofumpt@latest
   # sqlc code generator
   add_golang_app github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+  # cobra cli generator
+  add_golang_app github.com/spf13/cobra-cli@latest
 
   if test (count $golang_apps) -gt 0
     gum log "Installing golang tools: $golang_apps"
