@@ -7,7 +7,7 @@ trusted_config_paths = [
 [tools]
 bun = "latest"
 github-cli = "latest"
-"github:metruzanca/bj" = "latest"
+"github:metruzanca/bj" = "v0.4.0"
 "cargo:worktrunk" = "latest"
 "npm:degit" = "latest"
 "npm:kill-port" = "latest"
