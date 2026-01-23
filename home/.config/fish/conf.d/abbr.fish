@@ -11,8 +11,10 @@ abbr rm 'rm -r'
 # Very basic approximation of line of code count in a git repository
 abbr loc 'git ls-files -z | xargs -0 wc -l 2>/dev/null | awk "END {print \$1}" | awk "{printf \"%'\''d LOC\\n\", \$0}"'
 
-
 abbr c 'cursor .'
-abbr ca 'cursor-agent'
+abbr ca cursor-agent
 abbr car 'cursor-agent --resume'
 abbr dot 'cursor ~/dotfiles'
+
+# Common mistypes
+abbr msie mise
