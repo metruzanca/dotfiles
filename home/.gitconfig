@@ -1,8 +1,14 @@
 [user]
   email = sam@zanca.dev
-	name = Metru
+	name = Sam Zanca
+# Change username if on work machine. Work machine has whoami=sentience
+[includeIf "gitdir:/Users/sentience/"]
+  path = ~/.gitconfig-work
+
 [init]
   defaultBranch = main
+[advice]
+  statusHints = false
 [alias]
   # This is a utility for other custom aliases
   master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
@@ -18,9 +24,9 @@
   publish = !sh -c \"git push --set-upstream origin $(git branch --show-current)\"
   detach = checkout --detach
   attach = checkout -
+  clear = !sh -c \"git reset --hard && git checkout . && git clean -fd\"
 [core]
   excludesfile = ~/.gitignore_global
-
-# Change username if on work machine. Work machine has whoami=sentience
-[includeIf "gitdir:/Users/sentience/"]
-  path = ~/.gitconfig-work
+[fetch]
+	prune = true
+	all = true

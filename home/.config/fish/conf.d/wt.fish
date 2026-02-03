@@ -4,9 +4,9 @@ if type -q wt;
   command wt config shell init fish | source; 
 
 
-  set -l date (date "+%b-%d")
+  set -l date (date "+%b-%d" | string lower)
 
-  abbr -a wtc "wt switch -c -x cursor-agent metru/$date/"
+  abbr wtc "wt switch -c -x cursor-agent zanca/$date-"
   abbr wts "wt switch"
   abbr wtr "wt remove"
 end
