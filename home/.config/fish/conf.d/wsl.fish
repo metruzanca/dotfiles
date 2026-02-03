@@ -7,6 +7,10 @@ if test -f /proc/version
     # abbr docker "powershell docker"
     abbr w "cd /mnt/c/Users/"
 
+    # In wsl (ubuntu), the default is w3m, which is not available on windows
+    # so using explorer.exe with a url opens the default browser
+    set -gx BROWSER explorer.exe
+
     function powershell
       powershell.exe -Command "$argv"
     end
