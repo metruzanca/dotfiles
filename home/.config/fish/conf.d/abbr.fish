@@ -18,3 +18,6 @@ abbr dot 'cursor ~/dotfiles'
 
 # Common mistypes
 abbr msie mise
+
+# opencode (cli/tui app)
+abbr oc 'opencode'
