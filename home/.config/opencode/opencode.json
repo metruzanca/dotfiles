@@ -1,4 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "theme": "system"
+  "theme": "system",
+  "mcp": {
+    "mcp-debugger": {
+      "type": "local",
+      "command": ["npx", "-y", "github:metruzanca/mcp-debugger"],
+      "enabled": true
+    }
+  }
 }
