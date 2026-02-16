@@ -6,6 +6,11 @@
       "type": "local",
       "command": ["npx", "-y", "github:metruzanca/mcp-debugger"],
       "enabled": true
+    },
+    "figma": {
+      "type": "remote",
+      "url": "https://mcp.figma.com/mcp",
+      "enabled": true
     }
   }
 }
