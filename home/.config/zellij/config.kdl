@@ -344,7 +344,10 @@ web_client {
 //   - detach (Default)
 //   - quit
 // 
-// on_force_close "quit"
+on_force_close "quit"
+
+session_name "main"
+attach_to_session true
  
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
