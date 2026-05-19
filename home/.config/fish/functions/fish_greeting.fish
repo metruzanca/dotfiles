@@ -1,6 +1,6 @@
 function fish_greeting
     if type -q pfetch
-        if test "$TERM_PROGRAM" = "vscode"
+        if contains -- "$TERM_PROGRAM" vscode zed
             return
         end
         pfetch
