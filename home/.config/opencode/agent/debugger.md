@@ -28,6 +28,7 @@ description: >-
 
   </example>
 mode: primary
+disable: true
 color: "#e63946"
 tools:
   "*": false
