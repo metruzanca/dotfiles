@@ -22,3 +22,4 @@ abbr ocw 'opencode web --hostname="0.0.0.0"'
 abbr bocw 'bj opencode web --hostname="0.0.0.0"'
 
 abbr code 'zed'
+abbr wzed 'win zed'
