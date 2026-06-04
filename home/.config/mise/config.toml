@@ -13,10 +13,11 @@ github-cli = "latest"
 "npm:degit" = "latest"
 "npm:kill-port" = "latest"
 node = "latest"
-rust = "latest"
 fzf = "latest"
 fd = "latest"
 zellij = "latest"
 java = "openjdk-25.0.2"
 gradle = "9.2.0"
 watchexec = "latest"
+
+[env]

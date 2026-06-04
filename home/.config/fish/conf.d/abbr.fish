@@ -15,11 +15,10 @@ abbr c 'zed .'
 abbr dot '$EDITOR ~/dotfiles'
 
 # opencode (cli/tui app)
-abbr oc 'opencode'
+abbr oc opencode
 # Start opencode web server, available on all interfaces (e.g. tailscale)
 abbr ocw 'opencode web --hostname="0.0.0.0"'
 # Start opencode web server in background
 abbr bocw 'bj opencode web --hostname="0.0.0.0"'
 
-abbr code 'zed'
 abbr wzed 'win zed'

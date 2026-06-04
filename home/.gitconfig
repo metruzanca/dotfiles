@@ -9,6 +9,12 @@
   defaultBranch = main
 [advice]
   statusHints = false
+[core]
+  editor = "hx"
+  excludesfile = ~/.gitignore_global
+[fetch]
+	prune = true
+	all = true
 [alias]
   # This is a utility for other custom aliases
   master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
@@ -25,8 +31,3 @@
   detach = checkout --detach
   attach = checkout -
   clear = !sh -c \"git reset --hard && git checkout . && git clean -fd\"
-[core]
-  excludesfile = ~/.gitignore_global
-[fetch]
-	prune = true
-	all = true
