@@ -11,6 +11,10 @@ if test -f /home/linuxbrew/.linuxbrew/bin/brew
   fish_add_path /home/linuxbrew/.linuxbrew/opt/uutils-coreutils/libexec/uubin
 end
 
+# I have a lot of cargo installed apps, if this isn't here their configs might not load e.g. lsd.fish
+if test -f "$HOME/.cargo/env.fish"
+    source "$HOME/.cargo/env.fish"
+end
 
 # ---------- Default Environment Variables ----------
 # This fish file gets loaded first, so we can set default env vars here
