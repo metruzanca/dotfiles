@@ -10,3 +10,6 @@ node_modules
 # Vscode (mainly for work repos)
 .vscode/settings.json
 
+# Reference repos used in coding agent workflows
+reference
+references
