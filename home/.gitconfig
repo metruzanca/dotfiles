@@ -1,9 +1,12 @@
 [user]
   email = sam@zanca.dev
 	name = Sam Zanca
-# Change username if on work machine. Work machine has whoami=sentience
-[includeIf "gitdir:/Users/sentience/"]
-  path = ~/.gitconfig-work
+
+# tangled.org repos — covers both HTTPS and SSH URL formats
+[includeIf "hasconfig:remote.*.url:**/tangled.org/**"]
+  path = ~/.gitconfig-tangled
+[includeIf "hasconfig:remote.*.url:*@tangled.org:**/**"]
+  path = ~/.gitconfig-tangled
 
 [init]
   defaultBranch = main
@@ -32,8 +35,10 @@
   attach = checkout -
   clear = !sh -c \"git reset --hard && git checkout . && git clean -fd\"
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/home/szanca/.local/share/mise/installs/github-cli/2.85.0/gh_2.85.0_linux_amd64/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/home/szanca/.local/share/mise/installs/github-cli/2.85.0/gh_2.85.0_linux_amd64/bin/gh auth git-credential
+[push]
+	followTags = true
