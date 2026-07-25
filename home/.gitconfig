@@ -1,12 +1,6 @@
 [user]
-  email = sam@zanca.dev
-	name = Sam Zanca
-
-# tangled.org repos — covers both HTTPS and SSH URL formats
-[includeIf "hasconfig:remote.*.url:**/tangled.org/**"]
-  path = ~/.gitconfig-tangled
-[includeIf "hasconfig:remote.*.url:*@tangled.org:**/**"]
-  path = ~/.gitconfig-tangled
+  name = metru.dev
+  email = metru@zanca.dev
 
 [init]
   defaultBranch = main
@@ -18,6 +12,8 @@
 [fetch]
 	prune = true
 	all = true
+[push]
+	followTags = true
 [alias]
   # This is a utility for other custom aliases
   master = !sh -c \"git remote show origin | grep 'HEAD branch' | cut -d' ' -f5\"
@@ -40,5 +36,3 @@
 [credential "https://gist.github.com"]
 	helper =
 	helper = !/home/szanca/.local/share/mise/installs/github-cli/2.85.0/gh_2.85.0_linux_amd64/bin/gh auth git-credential
-[push]
-	followTags = true
