@@ -14,11 +14,11 @@ hidden = false
 enable = true
 
 # Disable arrow keys in normal mode to force me to build muscle memory
-[keys.normal]
-up = "no_op"
-down = "no_op"
-left = "no_op"
-right = "no_op"
+#[keys.normal]
+#up = "no_op"
+#down = "no_op"
+#left = "no_op"
+#right = "no_op"
 
 # [keys.insert]
 # up = "no_op"
