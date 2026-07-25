@@ -1,11 +1,13 @@
 # Fish evaluates this folder by filename order, so 0_init.fish runs before everything else.
 # Brew should be initialized before anything else, so we can use all packages easily from PATH
 # ---------- Homebrew setup ----------
-if command -v brew
-  set -l brew_prefix (brew --prefix)
-  eval ($brew_prefix/bin/brew shellenv)
-  fish_add_path $brew_prefix/opt/uutils-coreutils/libexec/uubin
-  fish_add_path $brew_prefix/opt/libpq/bin
+for brew_prefix in /opt/homebrew /usr/local /home/linuxbrew/.linuxbrew
+  if test -f $brew_prefix/bin/brew
+    eval ($brew_prefix/bin/brew shellenv)
+    fish_add_path $brew_prefix/opt/uutils-coreutils/libexec/uubin
+    fish_add_path $brew_prefix/opt/libpq/bin
+    break
+  end
 end
 
 # I have a lot of cargo installed apps, if this isn't here their configs might not load e.g. lsd.fish
