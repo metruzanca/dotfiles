@@ -12,7 +12,7 @@
         "-y",
         "github:metruzanca/mcp-debugger"
       ],
-      "enabled": false,
+      "enabled": true,
       "type": "local"
     },
     "railway": {
