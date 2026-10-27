@@ -2,18 +2,15 @@
 brew "fish"
 brew "starship"
 brew "lsd"
-brew "pfetch"
 brew "stow"
 brew "zoxide"
 brew "direnv"
 brew "gum"
-
-# Install Terminal Apps
+brew "mise"
 brew "htop"
 brew "gh"
-brew "evil-helix"
 brew "tree"
-brew "jj" # https://jj-vcs.github.io/jj
+brew "podman"
 
 # Fonts
 cask "font-comic-mono"
@@ -22,29 +19,21 @@ cask "font-liga-comic-mono"
 
 # Install Cask Apps
 cask "brave-browser"
-cask "alacritty"
-cask "visual-studio-code"
-cask "alt-tab"
-cask "caffeine"
+cask "ghostty"
 cask "raycast"
-cask "rectangle"
-cask "slack"
-cask "docker"
-cask "shottr"
-cask "appcleaner"
-cask "keycastr"
-cask "kap"
 cask "spotify"
 cask "notion"
-cask "linear-linear"
-cask "beekeeper-studio"
-# cask "tunnelblick" # OpenVPN client
-# cask "yaak"
-
-## Development Tools
-brew "volta" # Node version manager
-brew "awscli"
-
-# Non-Work Apps
 cask "discord"
 cask "whatsapp"
+cask "podman-desktop"
+
+# Useful macos apps
+#cask "shottr"
+#cask "rectangle"
+#cask "alt-tab"
+#cask "caffeine"
+#cask "slack"
+#cask "linear-linear"
+#cask "appcleaner"
+#cask "keycastr"
+#cask "kap"
