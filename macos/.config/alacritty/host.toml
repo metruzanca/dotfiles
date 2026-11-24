@@ -1,0 +1,14 @@
+# macOS overrides for ~/.config/alacritty/alacritty.toml.
+
+[general]
+import = ["~/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[font]
+size = 16.0
+
+# Decorations stay at the default: "None" on macOS hides the title bar and
+# with it the window tabs.
+
+[terminal.shell]
+program = "/opt/homebrew/bin/fish"
+args = ["-l"]

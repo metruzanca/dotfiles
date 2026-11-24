@@ -1,15 +1,13 @@
+# Shared alacritty config. Per-OS values (window decorations, font size, login
+# shell) live in host.toml, linked from the `macos/` or `linux/` stow package.
+# Values in this file win over imported ones, so keep host overrides out of here.
+
 [window]
 opacity = 0.85
-# decorations = "None" # Disabling this on MacOS will prevent the window from having tabs.
 startup_mode = "Maximized"
 
 [font]
-size = 16.0
 normal = { family = "FiraCode Nerd Font" }
 
 [general]
-import = ["~/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
-
-[terminal.shell]
-program = "/opt/homebrew/bin/fish"
-args = ["-l"]
+import = ["~/.config/alacritty/host.toml"]

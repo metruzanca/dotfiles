@@ -1,0 +1,74 @@
+{
+  "cli_default_open_behavior": "new_window",
+  "buffer_font_family": "Liga Comic Mono",
+  "buffer_font_features": {
+    "calt": true
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "opencode",
+      "model": "go/deepseek-v4-flash"
+    }
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "terminal": {
+    "dock": "right"
+  },
+  "language_models": {
+    "opencode": {
+      "show_zen_models": false,
+      "show_go_models": true
+    }
+  },
+  "auto_install_extensions": {
+    "nix": true
+  },
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd", "!nil"],
+      "formatter": {
+        "external": {
+          "command": "/run/current-system/sw/bin/nixfmt"
+        }
+      }
+    }
+  },
+  "lsp": {
+    "nixd": {
+      "binary": {
+        "path": "/run/current-system/sw/bin/nixd"
+      },
+      "settings": {
+        "nixpkgs": {
+          "expr": "import (builtins.getFlake \"/home/metru/nixfiles\").inputs.nixpkgs { }"
+        },
+        "formatting": {
+          "command": ["/run/current-system/sw/bin/nixfmt"]
+        },
+        "options": {
+          "nixos": {
+            "expr": "(builtins.getFlake \"/home/metru/nixfiles\").nixosConfigurations.nixos.options"
+          },
+          "home-manager": {
+            "expr": "(builtins.getFlake \"/home/metru/nixfiles\").nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []"
+          }
+        }
+      }
+    }
+  },
+  "file_types": {
+    "Templ": ["gth"]
+  }
+}

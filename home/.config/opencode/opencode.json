@@ -4,6 +4,14 @@
     "~/.config/opencode/AGENTS.md"
   ],
   "mcp": {
+    "agent-browser": {
+      "command": [
+        "agent-browser",
+        "mcp"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
     "figma": {
       "enabled": false,
       "type": "remote",
@@ -21,7 +29,8 @@
     "railway": {
       "command": [
         "railway",
-        "mcp"
+        "mcp",
+        "proxy"
       ],
       "enabled": true,
       "type": "local"

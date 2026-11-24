@@ -22,6 +22,10 @@ stow home
 stow macos
 ```
 
+On NixOS this repo is consumed by
+[`nixfiles`](https://github.com/metruzanca/nixfiles) as a submodule instead of
+stow: `home/` is linked first, then `linux/` on top (see "File Structure").
+
 
 ```bash
 # Change shell
@@ -103,11 +107,17 @@ tailscale serve status
 
 ```bash
 .
-├── home      # Home directory for all
-├── macos     # MacOS specific directories
+├── home      # Shared config, same on every machine
+├── linux     # Linux-only overrides (applied on top of home)
+├── macos     # MacOS-only config and overrides (applied on top of home)
 ├── windows   # Windows specific directories (need to manually symlink)
 └── scripts   # Helpful scripts
 ```
+
+Anything that differs per machine goes in a layer, never in `home/`: a file in
+`linux/` or `macos/` at the same relative path replaces the shared one, and new
+files are simply added. Keep host-specific values out of `home/` so both
+machines can share it verbatim.
 
 ---
 

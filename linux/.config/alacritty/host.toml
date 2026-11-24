@@ -1,0 +1,12 @@
+# Linux overrides for ~/.config/alacritty/alacritty.toml.
+
+[window]
+decorations = "None"
+
+[font]
+size = 14.0
+
+# To run herdr (the persistent terminal workspace manager) as the default shell
+# on every new session, uncomment:
+# [terminal.shell]
+# program = "/run/current-system/sw/bin/herdr"
