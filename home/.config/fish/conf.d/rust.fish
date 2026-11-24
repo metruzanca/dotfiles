@@ -13,5 +13,6 @@ if type -q cargo
     # end
 
     set -gx CARGO_TARGET_DIR "$HOME/.cache/cargo-target"
+    set -gx CARGO_BUILD_BUILD_DIR "$HOME/.cache/cargo-target"
     set -gx RUSTUP_TOOLCHAIN "stable"
 end

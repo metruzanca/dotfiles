@@ -1,4 +1,11 @@
 theme = "onedarker"
+
+[keys.normal]
+C-q = ":q"
+
+[keys.insert]
+C-backspace = "delete_word_backward"
+
 [editor]
 true-color = true
 # See https://twitter.com/swlkr/status/1651284505968115714

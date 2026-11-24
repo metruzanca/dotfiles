@@ -12,6 +12,9 @@ abbr rm 'rm -r'
 abbr loc 'git ls-files -z | xargs -0 wc -l 2>/dev/null | awk "END {print \$1}" | awk "{printf \"%'\''d LOC\\n\", \$0}"'
 
 abbr c 'zed .'
+# Herdr
+abbr hr herdr
+abbr hrr herdr-remote
 abbr dot '$EDITOR ~/dotfiles'
 
 # opencode (cli/tui app)

@@ -4,3 +4,12 @@ home/.config/helix/runtime
 # Fish
 home/.config/fish/config.fish
 home/.config/fish/fish_variables
+
+# Zed prompt library runtime database
+home/.config/zed/prompts/
+
+# Herdr app data and generated integrations (live in ~/.config, not in the repo)
+home/.config/herdr-app/
+home/.config/opencode/herdr-opencode/
+home/.config/opencode/herdr-tui-session.js
+home/.config/opencode/plugins/herdr-agent-state.js

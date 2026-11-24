@@ -1,23 +1,2 @@
-[settings]
-experimental = true
-trusted_config_paths = [
-  "~/code/", "~/.code",
-  "~/dev", "~/.dev"
-]
-
 [tools]
-bun = "latest"
-github-cli = "latest"
-"github:metruzanca/bj" = "v0.4.0"
-"cargo:worktrunk" = "latest"
-"npm:degit" = "latest"
-"npm:kill-port" = "latest"
-node = "latest"
-fzf = "latest"
-fd = "latest"
-zellij = "latest"
-java = "openjdk-25.0.2"
-gradle = "9.2.0"
-watchexec = "latest"
-
-[env]
+go = "latest"

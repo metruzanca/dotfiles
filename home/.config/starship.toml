@@ -23,3 +23,10 @@ format = "[$time]($style) "
 # Show little cloud icon if AWS_PROFILE is set
 disabled = false
 format = "[$symbol]($style)"
+
+[custom.mask]
+# Show the mask currently worn in this shell; hidden when no mask is worn.
+command = 'printf %s "$MASK_NAME"'
+when = 'test -n "$MASK_NAME"'
+format = '[🎭 $output](bold purple) '
+description = "currently worn mask"
