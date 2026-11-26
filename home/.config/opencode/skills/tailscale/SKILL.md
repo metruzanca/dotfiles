@@ -1,12 +1,16 @@
 ---
-name: tailnet-dev
-description: Use when a user wants to make a local dev server or app reachable from other devices on their Tailscale network ("tailnet") via MagicDNS — for example changing the bind address to 0.0.0.0, allowing the tailnet hostname or origin in a dev server / CORS / ALLOWED_HOSTS config, or figuring out the MagicDNS URL another device should use to reach the server. Not for general Tailscale setup or networking questions that don't involve exposing a local service.
+name: tailscale
+description: Use when the user says "tailscale" or "tail skill", or wants a local dev server or app reachable from other devices on their Tailscale network ("tailnet") via MagicDNS: changing the bind address to 0.0.0.0, allowing the tailnet hostname or origin in a dev server / CORS / ALLOWED_HOSTS config, or finding the MagicDNS URL another device should use. Not for general Tailscale setup or networking questions that don't involve exposing a local service.
 ---
 
-# tailnet-dev
+# tailscale
+
+Short answer for most requests: bind the server to `0.0.0.0` (not
+`127.0.0.1`), then open `http://<hostname>:<port>` from the other device. The
+rest of this file is the detail for when that is not enough.
 
 Make a local dev server reachable from other devices on the user's Tailscale
-network using MagicDNS names. Do not start by asking questions — run the
+network using MagicDNS names. Do not start by asking questions: run the
 commands in step 0, pick the matching rows from the cheat sheets, apply the
 changes, and verify with step 4.
 
@@ -41,7 +45,11 @@ the user to enable it, or fall back to the node's `100.x.x.x` tailnet IP from
 
 ## Step 1 — bind to 0.0.0.0
 
-Set the listener to all interfaces. Framework cheat sheet:
+Find where the server sets its host first (`package.json` scripts,
+`vite.config.*`, `next.config.*`, `docker-compose.yml`, the
+`uvicorn`/`flask`/`cargo run` invocation) and change it there, so the fix
+survives the next restart. Set the listener to all interfaces. Framework cheat
+sheet:
 
 | Framework / runtime | Change |
 |---|---|
